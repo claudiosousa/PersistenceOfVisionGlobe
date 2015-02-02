@@ -1,0 +1,43 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=pcb adaptation
+*Date=17:10:00
+*CreatedBy=Fritzing 0.9.1b.11.19.8d2d5970658f0bed09c661c9ea9a515b5f40f44c
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;17.2228;-9.73814;0;Bottom;Via23
+2;;;14.9368;-3.89611;0;Bottom;Via28
+3;;;25.6557;-6.18213;0;Bottom;Via16
+4;;SO16;15.7243;-5.29313;90;Top;IC2
+5;;;10.6696;-9.48412;0;Bottom;Via20
+6;;;14.9368;-5.92811;0;Bottom;Via26
+7;100nF;100 mil [THT, multilayer];7.36769;-6.56313;-90;Bottom;C3
+8;;;5.20869;-8.72213;0;Bottom;Via7
+9;;;2.66869;-1.10213;0;Bottom;Via4
+10;;;20.9566;-7.57914;0;Bottom;Via21
+11;;;25.6557;-3.64213;0;Bottom;Via15
+12;;;2.66869;-6.18213;0;Bottom;Via2
+13;;;23.1157;-8.72213;0;Bottom;Via13
+14;;;25.6557;-8.72213;0;Bottom;Via17
+15;;;6.9866;-1.86414;0;Bottom;Via29
+16;;;25.6557;-1.10213;0;Bottom;Via11
+17;;;5.20869;-6.18213;0;Bottom;Via10
+18;;;23.1157;-6.18213;0;Bottom;Via14
+19;;;2.66869;-8.72213;0;Bottom;Via1
+20;100nF;100 mil [THT, multilayer];9.14569;-6.56313;-90;Bottom;C4
+21;;;5.20869;-1.10213;0;Bottom;Via8
+22;;;9.5266;-1.99114;0;Bottom;Via27
+23;;;21.0836;-9.48412;0;Bottom;Via19
+24;;;5.20869;-3.64213;0;Bottom;Via9
+25;;;2.66869;-3.64213;0;Bottom;Via3
+26;;;15.9528;-2.37211;0;Bottom;Via25
+27;;;23.1157;-3.64213;0;Bottom;Via18
+28;;;23.1157;-1.10213;0;Bottom;Via12
