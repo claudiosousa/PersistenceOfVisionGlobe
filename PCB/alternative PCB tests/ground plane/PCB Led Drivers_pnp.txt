@@ -1,0 +1,810 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=PCB Led Drivers
+*Date=16:33:54
+*CreatedBy=Fritzing 0.9.1b.11.19.8d2d5970658f0bed09c661c9ea9a515b5f40f44c
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;11.6078;-158.052;0;Bottom;Copper Fill521
+2;;;10.8712;-145.035;0;Bottom;Copper Fill416
+3;;;12.9286;-282.652;0;Bottom;Copper Fill57
+4;;;27.5736;-155.579;0;Bottom;Via97
+5;;;21.717;-87.2498;0;Bottom;Copper Fill457
+6;;;21.7424;-296.8;0;Bottom;Copper Fill46
+7;;;28.2956;-127.509;0;Bottom;Copper Fill145
+8;;;19.9898;-156.922;0;Bottom;Copper Fill412
+9;;;3.302;-376.353;0;Bottom;Copper Fill282
+10;;;7.112;-338.557;0;Bottom;Copper Fill304
+11;;;19.4564;-146.457;0;Bottom;Copper Fill135
+12;;;8.0264;-49.099;0;Bottom;Copper Fill191
+13;;;19.8266;-149.737;0;Bottom;Via75
+14;;5 mm [THT];26.2021;-329.039;0;Bottom;LED90
+15;;;14.8082;-346.736;0;Bottom;Copper Fill300
+16;100nF;100 mil [THT, multilayer];4.22817;-67.0388;0;Bottom;C12
+17;;;18.0594;-134.773;0;Bottom;Copper Fill425
+18;;;10.4013;-372.949;0;Bottom;Copper Fill270
+19;;;22.0472;-152.375;0;Bottom;Copper Fill132
+20;;;22.0472;-199.111;0;Bottom;Copper Fill105
+21;220;THT;8.14265;-204.728;0;Bottom;R50
+22;100nF;100 mil [THT, multilayer];3.97417;-36.3048;0;Bottom;C9
+23;;5 mm [THT];26.3066;-183.011;0;Bottom;LED52
+24;;;23.5204;-193.269;0;Bottom;Copper Fill386
+25;;;2.9337;-148.87;0;Bottom;Copper Fill514
+26;;;18.0848;-88.0118;0;Bottom;Copper Fill455
+27;;;13.0302;-142.495;0;Bottom;Copper Fill140
+28;;;21.1074;-267.818;0;Bottom;Copper Fill61
+29;;;19.0754;-82.5508;0;Bottom;Copper Fill459
+30;;;26.9494;-256.007;0;Bottom;Copper Fill69
+31;;;23.0016;-149.737;0;Bottom;Via78
+32;;;12.9286;-82.0936;0;Bottom;Copper Fill174
+33;100nF;100 mil [THT, multilayer];4.73617;-19.7948;0;Bottom;C6
+34;;5 mm [THT];26.3291;-83.6758;0;Bottom;LED41
+35;;;28.2194;-285.217;0;Bottom;Copper Fill54
+36;;DIP (Dual Inline) [THT];11.8674;-58.1541;-90;Bottom;IC6
+37;;;15.8593;-346.823;0;Bottom;TXT1
+38;;;1.9558;-255.22;0;Bottom;Copper Fill70
+39;;;7.0612;-214.707;0;Bottom;Copper Fill375
+40;;;2.9337;-71.7558;0;Bottom;Copper Fill502
+41;;;10.021;-362.83;0;Bottom;TXT1
+42;;;29.3742;-45.7028;0;Bottom;Via10
+43;;;7.112;-245.06;0;Bottom;Copper Fill357
+44;;;28.321;-57.3794;0;Bottom;Copper Fill185
+45;;5 mm [THT];26.3066;-147.959;0;Bottom;LED55
+46;;;9.4234;-314.466;0;Bottom;Copper Fill259
+47;;;15.367;-316.396;0;Bottom;Copper Fill547
+48;;5 mm [THT];26.3066;-165.485;0;Bottom;LED48
+49;;;19.3548;-333.35;0;Bottom;Copper Fill24
+50;;;10.021;-316.095;0;Bottom;TXT1
+51;;;6.8072;-35.4592;0;Bottom;Copper Fill487
+52;220;THT;8.03817;-95.8678;0;Bottom;R48
+53;;;15.4686;-129.452;0;Bottom;Copper Fill231
+54;;5 mm [THT];26.3066;-153.801;0;Bottom;LED45
+55;;;15.494;-35.9799;0;Bottom;Copper Fill512
+56;;;2.6924;-235.84;0;Bottom;Copper Fill83
+57;;5 mm [THT];26.3291;-54.4658;0;Bottom;LED30
+58;;5 mm [THT];26.3291;-95.3598;0;Bottom;LED44
+59;;;15.8593;-300.086;0;Bottom;TXT1
+60;;;19.8492;-56.2438;0;Bottom;Via58
+61;;;3.2512;-298.222;0;Bottom;Copper Fill326
+62;;;2.6289;-128.957;0;Bottom;Copper Fill220
+63;;;2.7432;-173.965;0;Bottom;Copper Fill119
+64;;;11.6078;-64.5295;0;Bottom;Copper Fill508
+65;;;11.7856;-239.167;0;Bottom;Copper Fill79
+66;;DIP (Dual Inline) [THT];11.8256;-168.025;-90;Bottom;IC13
+67;;;10.5156;-254.013;0;Bottom;Copper Fill535
+68;;;19.3802;-286.589;0;Bottom;Copper Fill52
+69;;;10.0435;-269.338;0;Bottom;TXT1
+70;;;15.494;-35.9799;0;Bottom;Copper Fill216
+71;;;2.9337;-25.0198;0;Bottom;Copper Fill497
+72;;5 mm [THT];26.3291;-66.1498;0;Bottom;LED36
+73;;;2.5781;-237.465;0;Bottom;Copper Fill239
+74;;;28.2194;-232.639;0;Bottom;Copper Fill86
+75;;;16.5989;-382.753;0;Bottom;Copper Fill553
+76;;5 mm [THT];26.3066;-171.327;0;Bottom;LED58
+77;;;15.9637;-113.163;0;Bottom;TXT1
+78;;5 mm [THT];26.3066;-159.643;0;Bottom;LED49
+79;;;14.8844;-66.3456;0;Bottom;Copper Fill468
+80;;;6.6802;-362.586;0;Bottom;Copper Fill292
+81;220;THT;8.03817;-80.7548;0;Bottom;R47
+82;;;2.5781;-222.378;0;Bottom;Copper Fill237
+83;;;2.7432;-33.6812;0;Bottom;Copper Fill197
+84;;;28.194;-320.269;0;Bottom;Copper Fill32
+85;;;10.1255;-129.172;0;Bottom;TXT1
+86;;;29.2862;-162.561;0;Bottom;Copper Fill407
+87;;;9.525;-127.572;0;Bottom;Copper Fill226
+88;;;23.0242;-102.98;0;Bottom;Via61
+89;;;2.7813;-320.523;0;Bottom;Copper Fill249
+90;;;10.4902;-300.75;0;Bottom;Copper Fill541
+91;1?F;100 mil [THT, tantalum];13.3496;-129.417;0;Bottom;C21
+92;;;2.6924;-314.224;0;Bottom;Copper Fill35
+93;;;11.3538;-376.34;0;Bottom;Copper Fill273
+94;;;28.321;-92.4314;0;Bottom;Copper Fill167
+95;;;7.0358;-308.204;0;Bottom;Copper Fill321
+96;;;19.5072;-52.9852;0;Bottom;Copper Fill477
+97;;;3.2512;-251.486;0;Bottom;Copper Fill354
+98;;;22.2758;-134.011;0;Bottom;Copper Fill427
+99;;;8.4328;-112.116;0;Bottom;Copper Fill154
+100;;;7.9248;-267.615;0;Bottom;Copper Fill64
+101;;;14.9352;-181.916;0;Bottom;Copper Fill395
+102;;;26.6954;-260.351;0;Bottom;Copper Fill350
+103;;DIP (Dual Inline) [THT];11.8449;-198.383;-90;Bottom;IC11
+104;;;2.9337;-195.606;0;Bottom;Copper Fill522
+105;;;28.2194;-261.849;0;Bottom;Copper Fill68
+106;;;28.2194;-297.663;0;Bottom;Copper Fill47
+107;;;14.859;-275.337;0;Bottom;Copper Fill339
+108;;;2.7432;-127.229;0;Bottom;Copper Fill146
+109;;;17.0688;-252.274;0;Bottom;Copper Fill73
+110;;;14.097;-56.1856;0;Bottom;Copper Fill473
+111;;;7.2136;-151.664;0;Bottom;Copper Fill413
+112;;5 mm [THT];26.3291;-71.9918;0;Bottom;LED38
+113;1?F;100 mil [THT, tantalum];13.2452;-363.076;0;Bottom;C39
+114;;;12.6492;-136.018;0;Bottom;Copper Fill142
+115;;;3.2258;-344.958;0;Bottom;Copper Fill301
+116;1?F;100 mil [THT, tantalum];12.9686;-191.393;0;Bottom;C24
+117;;;20.0406;-50.4452;0;Bottom;Copper Fill188
+118;;5 mm [THT];26.2246;-247.231;0;Bottom;LED61
+119;;;17.0434;-345.746;0;Bottom;Copper Fill17
+120;;;6.7818;-175.693;0;Bottom;Copper Fill401
+121;;;9.4234;-361.202;0;Bottom;Copper Fill271
+122;;;25.146;-140.971;0;Bottom;Copper Fill422
+123;;;7.239;-104.903;0;Bottom;Copper Fill443
+124;100nF;100 mil [THT, multilayer];4.20565;-113.796;0;Bottom;C19
+125;;;10.5918;-152.096;0;Bottom;Copper Fill131
+126;;;28.6512;-51.6898;0;Bottom;Copper Fill475
+127;;;12.8524;-127.306;0;Bottom;Copper Fill432
+128;;;12.827;-222.276;0;Bottom;Copper Fill93
+129;;;6.8072;-82.1952;0;Bottom;Copper Fill460
+130;;DIP (Dual Inline) [THT];11.8674;-104.89;-90;Bottom;IC7
+131;1?F;100 mil [THT, tantalum];12.8867;-284.823;0;Bottom;C42
+132;;;24.5482;-20.1758;0;Bottom;Via162
+133;100nF;100 mil [THT, multilayer];3.95165;-144.911;0;Bottom;C27
+134;;;18.1612;-19.5069;0;Bottom;TXT1
+135;;;6.9596;-89.6374;0;Bottom;Copper Fill452
+136;;;28.2956;-145.035;0;Bottom;Copper Fill137
+137;;;28.2194;-291.059;0;Bottom;Copper Fill50
+138;;;19.3294;-193.142;0;Bottom;Copper Fill389
+139;;;7.112;-291.796;0;Bottom;Copper Fill329
+140;;5 mm [THT];26.2246;-212.179;0;Bottom;LED65
+141;;;8.3312;-252.274;0;Bottom;Copper Fill71
+142;;;26.6954;-213.615;0;Bottom;Copper Fill376
+143;1?F;100 mil [THT, tantalum];13.3722;-35.9238;0;Bottom;C7
+144;;;24.8539;-14.7755;0;Bottom;TXT1
+145;;;27.5736;-202.315;0;Bottom;Via98
+146;;;11.938;-52.274;0;Bottom;Copper Fill186
+147;;;2.5146;-19.8255;0;Bottom;Copper Fill499
+148;;;10.4013;-341.453;0;Bottom;Copper Fill260
+149;;;6.16301;-13.2664;0;Bottom;TXT1
+150;;;2.6924;-360.96;0;Bottom;Copper Fill7
+151;;;29.2608;-69.0888;0;Bottom;Copper Fill466
+152;;;28.7274;-34.1384;0;Bottom;Copper Fill488
+153;;;27.5962;-108.822;0;Bottom;Via71
+154;100nF;100 mil [THT, multilayer];3.86969;-223.228;0;Bottom;C45
+155;;;11.4808;-344.946;0;Bottom;Copper Fill544
+156;;;24.5316;-17.2567;0;Bottom;TXT1
+157;;;17.2212;-193.142;0;Bottom;Copper Fill388
+158;;;29.8596;-169.549;0;Bottom;Via100
+159;;;28.6004;-297.79;0;Bottom;Copper Fill327
+160;;5 mm [THT];26.2246;-258.915;0;Bottom;LED68
+161;;;28.6512;-204.344;0;Bottom;Copper Fill382
+162;;;13.7033;-14.9106;0;Bottom;Copper Fill509
+163;;;19.3802;-239.853;0;Bottom;Copper Fill80
+164;;;2.8321;-289.027;0;Bottom;Copper Fill536
+165;;;7.9248;-361.138;0;Bottom;Copper Fill8
+166;;;28.194;-367.005;0;Bottom;Copper Fill4
+167;;;9.046;-17.0302;0;Bottom;TXT1
+168;;;13.0302;-95.708;0;Bottom;Copper Fill166
+169;100nF;100 mil [THT, multilayer];3.97417;-51.4178;0;Bottom;C10
+170;;;29.1592;-302.743;0;Bottom;Copper Fill323
+171;220;THT;19.2142;-379.46;0;Bottom;R67
+172;;;16.2433;-14.9106;0;Bottom;Copper Fill217
+173;;;28.2956;-180.087;0;Bottom;Copper Fill116
+174;;;9.4234;-220.994;0;Bottom;Copper Fill240
+175;;;2.8321;-258.649;0;Bottom;Copper Fill532
+176;;5 mm [THT];26.3066;-130.433;0;Bottom;LED53
+177;;;14.4653;-315.494;0;Bottom;Copper Fill266
+178;;;12.5984;-229.439;0;Bottom;Copper Fill87
+179;;;15.621;-381.776;0;Bottom;Copper Fill554
+180;;;8.96449;-14.4631;0;Bottom;TXT1
+181;;;18.288;-286.538;0;Bottom;Copper Fill334
+182;;;17.9832;-321.692;0;Bottom;Copper Fill312
+183;;;28.6004;-361.341;0;Bottom;Copper Fill293
+184;;;25.1206;-234.519;0;Bottom;Copper Fill363
+185;;;13.9954;-20.397;0;Bottom;Copper Fill494
+186;;;15.4686;-176.188;0;Bottom;Copper Fill238
+187;;;28.321;-34.0114;0;Bottom;Copper Fill198
+188;;5 mm [THT];26.3291;-42.7818;0;Bottom;LED28
+189;;5 mm [THT];26.3291;-101.202;0;Bottom;LED42
+190;100nF;100 mil [THT, multilayer];3.84717;-363.457;0;Bottom;C48
+191;;;19.7447;-289.903;0;Bottom;Via105
+192;;;9.525;-142.66;0;Bottom;Copper Fill227
+193;;;12.6492;-42.5204;0;Bottom;Copper Fill194
+194;;;15.3924;-269.609;0;Bottom;Copper Fill542
+195;;;23.4052;-338.183;0;Bottom;Via148
+196;220;THT;8.03817;-49.1318;0;Bottom;R44
+197;;;11.7856;-285.903;0;Bottom;Copper Fill51
+198;;;17.5768;-381.776;0;Bottom;Copper Fill278
+199;;;17.5514;-173.534;0;Bottom;Copper Fill404
+200;;;11.6078;-111.266;0;Bottom;Copper Fill223
+201;;;23.5322;-57.7678;0;Bottom;Via12
+202;;;2.5781;-284.201;0;Bottom;Copper Fill246
+203;;;11.0744;-129.922;0;Bottom;Copper Fill428
+204;;5 mm [THT];26.3066;-194.695;0;Bottom;LED56
+205;;;28.575;-314.656;0;Bottom;Copper Fill318
+206;;;2.7432;-189.078;0;Bottom;Copper Fill111
+207;;;29.21;-256.007;0;Bottom;Copper Fill351
+208;;;15.7734;-12.015;0;Bottom;Copper Fill204
+209;;;2.794;-298.222;0;Bottom;Copper Fill44
+210;;;18.6436;-189.307;0;Bottom;Copper Fill392
+211;;;17.9832;-274.93;0;Bottom;Copper Fill340
+212;;;29.1338;-367.031;0;Bottom;Copper Fill288
+213;;;21.7424;-250.064;0;Bottom;Copper Fill74
+214;;;23.622;-53.0868;0;Bottom;Copper Fill474
+215;;DIP (Dual Inline) [THT];11.8482;-74.5318;-90;Bottom;IC8
+216;100nF;100 mil [THT, multilayer];3.86969;-285.077;0;Bottom;C51
+217;;;22.9197;-289.903;0;Bottom;Via110
+218;;;28.2956;-204.217;0;Bottom;Copper Fill103
+219;;DIP (Dual Inline) [THT];11.8256;-136.402;-90;Bottom;IC14
+220;;;28.2956;-133.351;0;Bottom;Copper Fill143
+221;;5 mm [THT];26.2021;-346.565;0;Bottom;LED72
+222;220;THT;7.91117;-314.435;0;Bottom;R62
+223;;;11.5824;-355.169;0;Bottom;Copper Fill10
+224;;;28.6512;-174.473;0;Bottom;Copper Fill402
+225;;5 mm [THT];26.3066;-142.117;0;Bottom;LED59
+226;;5 mm [THT];26.3291;-48.6238;0;Bottom;LED32
+227;;;7.1374;-136.399;0;Bottom;Copper Fill423
+228;;;28.321;-110.719;0;Bottom;Copper Fill157
+229;;;22.2758;-180.747;0;Bottom;Copper Fill398
+230;;;28.194;-308.585;0;Bottom;Copper Fill40
+231;;;28.6004;-267.895;0;Bottom;Copper Fill346
+232;;;17.5514;-126.798;0;Bottom;Copper Fill433
+233;;;29.7552;-356.471;0;Bottom;Via154
+234;;;19.9136;-330.861;0;Bottom;Copper Fill25
+235;;;20.2302;-104.504;0;Bottom;Via63
+236;;;27.0002;-209.297;0;Bottom;Copper Fill97
+237;1?F;100 mil [THT, tantalum];13.3496;-176.153;0;Bottom;C22
+238;;DIP (Dual Inline) [THT];11.7404;-338.57;-90;Bottom;IC18
+239;;THT;16.2932;-17.1278;-90;Bottom;J18
+240;;;28.2194;-220.955;0;Bottom;Copper Fill90
+241;;;11.684;-89.1802;0;Bottom;Copper Fill453
+242;;;2.7432;-142.342;0;Bottom;Copper Fill138
+243;;;12.5984;-276.175;0;Bottom;Copper Fill59
+244;;;1.9558;-302.007;0;Bottom;Copper Fill42
+245;;;19.4818;-99.6704;0;Bottom;Copper Fill161
+246;220;THT;8.03817;-344.913;0;Bottom;R57
+247;;;14.7574;-96.1652;0;Bottom;Copper Fill449
+248;220;THT;7.91117;-361.169;0;Bottom;R60
+249;;;12.7762;-220.727;0;Bottom;Copper Fill373
+250;;;3.5433;-14.936;0;Bottom;Copper Fill500
+251;100nF;100 mil [THT, multilayer];4.10117;-347.455;0;Bottom;C35
+252;;;9.3853;-381.636;0;Bottom;Copper Fill268
+253;;;11.7856;-332.69;0;Bottom;Copper Fill23
+254;;;8.4074;-158.852;0;Bottom;Copper Fill127
+255;;;3.9878;-68.657;0;Bottom;Copper Fill467
+256;;;23.5322;-104.504;0;Bottom;Via70
+257;;;18.6182;-236.195;0;Bottom;Copper Fill362
+258;;;9.90984;-144.326;0;Bottom;TXT1
+259;;;12.8778;-33.8082;0;Bottom;Copper Fill489
+260;1?F;100 mil [THT, tantalum];13.2677;-269.583;0;Bottom;C40
+261;;;2.7813;-352.172;0;Bottom;Copper Fill257
+262;;;10.4902;-347.486;0;Bottom;Copper Fill545
+263;100nF;100 mil [THT, multilayer];3.95165;-129.798;0;Bottom;C25
+264;;;28.2194;-331.953;0;Bottom;Copper Fill26
+265;;;17.5514;-80.0362;0;Bottom;Copper Fill463
+266;;5 mm [THT];26.2021;-340.723;0;Bottom;LED62
+267;;;11.1252;-36.399;0;Bottom;Copper Fill485
+268;;;9.90984;-191.062;0;Bottom;TXT1
+269;;;27.0256;-69.0634;0;Bottom;Copper Fill178
+270;;;11.6078;-158.052;0;Bottom;Copper Fill229
+271;;;19.9898;-203.658;0;Bottom;Copper Fill383
+272;;;10.1255;-175.908;0;Bottom;TXT1
+273;;;12.827;-269.012;0;Bottom;Copper Fill65
+274;;;3.9116;-302.337;0;Bottom;Copper Fill324
+275;;;15.9637;-159.899;0;Bottom;TXT1
+276;;;21.209;-174.372;0;Bottom;Copper Fill117
+277;;;15.3924;-222.873;0;Bottom;Copper Fill245
+278;;;2.9337;-102.109;0;Bottom;Copper Fill506
+279;;;21.971;-245.797;0;Bottom;Copper Fill77
+280;;;2.8321;-273.787;0;Bottom;Copper Fill533
+281;;;15.367;-316.396;0;Bottom;Copper Fill267
+282;;;27.4917;-295.745;0;Bottom;Via150
+283;;;29.1084;-320.269;0;Bottom;Copper Fill313
+284;;;2.6797;-97.3082;0;Bottom;Copper Fill214
+285;;;21.6916;-227.432;0;Bottom;Copper Fill368
+286;;;15.9863;-66.4057;0;Bottom;TXT1
+287;;;7.9248;-236.018;0;Bottom;Copper Fill84
+288;1?F;100 mil [THT, tantalum];12.8642;-67.0388;0;Bottom;C11
+289;100nF;100 mil [THT, multilayer];3.95165;-191.647;0;Bottom;C28
+290;;;25.0698;-328.016;0;Bottom;Copper Fill309
+291;;;10.9728;-363.576;0;Bottom;Copper Fill290
+292;;;10.148;-82.4148;0;Bottom;TXT1
+293;;;28.321;-51.5374;0;Bottom;Copper Fill189
+294;;5 mm [THT];26.2021;-305.672;0;Bottom;LED66
+295;;;28.321;-39.8534;0;Bottom;Copper Fill195
+296;;;14.1097;-283.947;0;Bottom;Copper Fill543
+297;;;28.194;-326.111;0;Bottom;Copper Fill30
+298;220;THT;8.06069;-251.422;0;Bottom;R55
+299;;;23.2664;-355.321;0;Bottom;Copper Fill11
+300;;;14.4653;-362.23;0;Bottom;Copper Fill279
+301;;;9.93236;-97.5684;0;Bottom;TXT1
+302;;;2.6289;-144.044;0;Bottom;Copper Fill224
+303;;;9.4234;-267.73;0;Bottom;Copper Fill247
+304;;5 mm [THT];26.3066;-136.275;0;Bottom;LED51
+305;;;2.7813;-305.436;0;Bottom;Copper Fill539
+306;;;12.7762;-314.224;0;Bottom;Copper Fill319
+307;;;8.0264;-189.332;0;Bottom;Copper Fill112
+308;;5 mm [THT];26.2021;-369.933;0;Bottom;LED74
+309;;;9.93236;-50.8325;0;Bottom;TXT1
+310;;;3.8862;-255.576;0;Bottom;Copper Fill352
+311;;;10.5156;-207.278;0;Bottom;Copper Fill528
+312;;;21.9202;-339.269;0;Bottom;Copper Fill21
+313;;5 mm [THT];26.3291;-89.5178;0;Bottom;LED40
+314;;;27.0256;-115.799;0;Bottom;Copper Fill152
+315;;;28.2194;-267.691;0;Bottom;Copper Fill62
+316;;;25.2222;-187.732;0;Bottom;Copper Fill393
+317;100nF;100 mil [THT, multilayer];3.84717;-316.721;0;Bottom;C46
+318;;;17.4498;-266.955;0;Bottom;Copper Fill348
+319;;;9.6774;-64.5295;0;Bottom;Copper Fill212
+320;;;10.148;-35.6788;0;Bottom;TXT1
+321;;;29.3516;-139.196;0;Bottom;Via101
+322;220;THT;8.01565;-189.361;0;Bottom;R54
+323;;;11.6332;-28.271;0;Bottom;Copper Fill201
+324;;;23.5204;-146.533;0;Bottom;Copper Fill415
+325;;;23.4277;-244.691;0;Bottom;Via145
+326;;;10.5918;-198.832;0;Bottom;Copper Fill104
+327;;;25.1714;-281.153;0;Bottom;Copper Fill337
+328;;;7.0358;-370.053;0;Bottom;Copper Fill285
+329;;;19.9898;-63.45;0;Bottom;Copper Fill471
+330;;;28.6512;-157.608;0;Bottom;Copper Fill411
+331;;5 mm [THT];26.3066;-177.169;0;Bottom;LED54
+332;;;3.9116;-349.073;0;Bottom;Copper Fill299
+333;;;12.5984;-322.936;0;Bottom;Copper Fill31
+334;;5 mm [THT];26.2246;-223.863;0;Bottom;LED77
+335;;;17.0688;-299.01;0;Bottom;Copper Fill45
+336;;;11.0744;-176.658;0;Bottom;Copper Fill399
+337;;;12.7762;-267.463;0;Bottom;Copper Fill347
+338;;5 mm [THT];26.3291;-77.8338;0;Bottom;LED43
+339;100nF;100 mil [THT, multilayer];3.86969;-238.341;0;Bottom;C49
+340;;;14.5034;-142.825;0;Bottom;Copper Fill420
+341;;;19.7447;-243.167;0;Bottom;Via106
+342;;;10.9728;-270.079;0;Bottom;Copper Fill343
+343;;;21.8186;-156.643;0;Bottom;Copper Fill129
+344;;5 mm [THT];26.2246;-253.073;0;Bottom;LED69
+345;;;21.844;-63.1452;0;Bottom;Copper Fill182
+346;;;28.321;-74.9054;0;Bottom;Copper Fill177
+347;;;14.0716;-196.394;0;Bottom;Copper Fill385
+348;;;6.7818;-128.957;0;Bottom;Copper Fill430
+349;;;8.0264;-142.596;0;Bottom;Copper Fill139
+350;;;8.3312;-299.01;0;Bottom;Copper Fill43
+351;;;11.1252;-83.135;0;Bottom;Copper Fill458
+352;;5 mm [THT];26.3066;-124.591;0;Bottom;LED57
+353;220;THT;8.01565;-174.248;0;Bottom;R52
+354;;;2.6797;-35.4338;0;Bottom;Copper Fill206
+355;;;18.8214;-95.8858;0;Bottom;Copper Fill450
+356;;;3.3528;-64.5676;0;Bottom;Copper Fill469
+357;;;17.4498;-220.219;0;Bottom;Copper Fill374
+358;;DIP (Dual Inline) [THT];11.8482;-89.6448;-90;Bottom;IC9
+359;100nF;100 mil [THT, multilayer];3.84717;-331.834;0;Bottom;C52
+360;;;2.6924;-329.337;0;Bottom;Copper Fill27
+361;;;22.9197;-243.167;0;Bottom;Via111
+362;;DIP (Dual Inline) [THT];11.7629;-245.077;-90;Bottom;IC16
+363;;;2.7813;-367.259;0;Bottom;Copper Fill258
+364;;;28.2956;-168.403;0;Bottom;Copper Fill124
+365;;;28.194;-314.427;0;Bottom;Copper Fill34
+366;;;7.1374;-74.5244;0;Bottom;Copper Fill464
+367;;;28.6004;-238.608;0;Bottom;Copper Fill359
+368;;;19.0754;-35.8148;0;Bottom;Copper Fill486
+369;;;9.525;-189.396;0;Bottom;Copper Fill234
+370;;5 mm [THT];26.3066;-188.853;0;Bottom;LED60
+371;;5 mm [THT];26.3291;-25.2558;0;Bottom;LED33
+372;;;8.4328;-65.355;0;Bottom;Copper Fill180
+373;;;11.6332;-75.007;0;Bottom;Copper Fill175
+374;;;14.8844;-206.554;0;Bottom;Copper Fill380
+375;;;11.1633;-14.9106;0;Bottom;Copper Fill507
+376;;;28.2194;-244.323;0;Bottom;Copper Fill78
+377;;;11.5062;-251.474;0;Bottom;Copper Fill534
+378;;;28.2956;-121.667;0;Bottom;Copper Fill151
+379;;;7.9248;-220.879;0;Bottom;Copper Fill92
+380;;;21.971;-292.533;0;Bottom;Copper Fill49
+381;;;2.7432;-95.5048;0;Bottom;Copper Fill164
+382;;;29.5012;-309.609;0;Bottom;Via155
+383;;;13.7033;-14.9106;0;Bottom;Copper Fill215
+384;;;28.2956;-185.929;0;Bottom;Copper Fill114
+385;;;10.9728;-223.343;0;Bottom;Copper Fill369
+386;;;2.9337;-40.1074;0;Bottom;Copper Fill496
+387;;;20.1032;-338.183;0;Bottom;Via118
+388;;;15.4686;-176.188;0;Bottom;Copper Fill530
+389;;;11.4808;-344.946;0;Bottom;Copper Fill264
+390;;;15.367;-363.132;0;Bottom;Copper Fill552
+391;1?F;100 mil [THT, tantalum];12.9686;-144.657;0;Bottom;C23
+392;1?F;100 mil [THT, tantalum];12.7597;-207.226;0;Bottom;C29
+393;220;THT;7.93369;-282.791;0;Bottom;R65
+394;;;7.0358;-323.317;0;Bottom;Copper Fill310
+395;;;18.9484;-362.992;0;Bottom;Copper Fill291
+396;;;26.7462;-26.7216;0;Bottom;Copper Fill492
+397;;;2.8829;-165.228;0;Bottom;Copper Fill519
+398;;;11.6078;-204.788;0;Bottom;Copper Fill236
+399;;;21.209;-34.1384;0;Bottom;Copper Fill196
+400;;;12.827;-362.51;0;Bottom;Copper Fill9
+401;;;12.9286;-329.388;0;Bottom;Copper Fill29
+402;;;3.3274;-158.04;0;Bottom;Copper Fill410
+403;;;15.367;-363.132;0;Bottom;Copper Fill280
+404;1µF;100 mil [THT, electrolytic];10.7052;-380.602;0;Bottom;C54
+405;;;2.8321;-335.789;0;Bottom;Copper Fill252
+406;;;11.5062;-298.21;0;Bottom;Copper Fill540
+407;;;12.5984;-369.672;0;Bottom;Copper Fill3
+408;100nF;100 mil [THT, multilayer];4.12369;-253.962;0;Bottom;C36
+409;;;16.5989;-382.753;0;Bottom;Copper Fill276
+410;;;17.4244;-313.716;0;Bottom;Copper Fill320
+411;;;18.7833;-14.9106;0;Bottom;Copper Fill221
+412;;;29.2697;-279.362;0;Bottom;Via158
+413;1?F;100 mil [THT, tantalum];12.8867;-238.087;0;Bottom;C41
+414;;;11.6078;-121.641;0;Bottom;Copper Fill149
+415;100nF;100 mil [THT, multilayer];3.95165;-176.534;0;Bottom;C26
+416;;;18.9484;-316.256;0;Bottom;Copper Fill316
+417;;;7.0612;-261.443;0;Bottom;Copper Fill349
+418;;;26.67;-353.823;0;Bottom;Copper Fill297
+419;1?F;100 mil [THT, tantalum];12.7372;-300.719;0;Bottom;C32
+420;;;2.8321;-211.913;0;Bottom;Copper Fill525
+421;;5 mm [THT];26.2246;-293.967;0;Bottom;LED64
+422;;;28.6004;-145.162;0;Bottom;Copper Fill419
+423;;;23.368;-28.1694;0;Bottom;Copper Fill202
+424;;;28.6258;-191.898;0;Bottom;Copper Fill390
+425;;;7.0358;-276.581;0;Bottom;Copper Fill338
+426;;;14.8336;-368.834;0;Bottom;Copper Fill286
+427;;;2.6797;-50.5722;0;Bottom;Copper Fill209
+428;;;7.239;-58.1668;0;Bottom;Copper Fill472
+429;;;28.2956;-139.193;0;Bottom;Copper Fill141
+430;;;23.2918;-261.824;0;Bottom;Copper Fill67
+431;;;27.4692;-342.501;0;Bottom;Via152
+432;;;15.0368;-113.107;0;Bottom;Copper Fill439
+433;1?F;100 mil [THT, tantalum];12.8642;-331.58;0;Bottom;C44
+434;;;19.05;-176.048;0;Bottom;Copper Fill400
+435;;;29.8596;-122.813;0;Bottom;Via99
+436;;DIP (Dual Inline) [THT];11.7437;-214.719;-90;Bottom;IC20
+437;1µF;100 mil [THT, electrolytic];4.86317;-15.8578;0;Bottom;C53
+438;;;18.5674;-142.596;0;Bottom;Copper Fill421
+439;;;21.1074;-361.29;0;Bottom;Copper Fill5
+440;;5 mm [THT];26.2021;-352.407;0;Bottom;LED67
+441;;;18.0594;-181.509;0;Bottom;Copper Fill396
+442;;;18.9992;-269.469;0;Bottom;Copper Fill344
+443;;;28.2956;-157.481;0;Bottom;Copper Fill130
+444;;;28.321;-63.9834;0;Bottom;Copper Fill183
+445;;;28.6512;-127.737;0;Bottom;Copper Fill431
+446;;;23.2918;-215.088;0;Bottom;Copper Fill95
+447;;5 mm [THT];26.2246;-276.441;0;Bottom;LED75
+448;;;17.2212;-146.406;0;Bottom;Copper Fill417
+449;;;3.4417;-20.7526;0;Bottom;Copper Fill207
+450;;;28.2194;-279.375;0;Bottom;Copper Fill58
+451;;;25.3746;-94.311;0;Bottom;Copper Fill451
+452;;;20.0406;-143.943;0;Bottom;Copper Fill136
+453;;;28.5496;-285.344;0;Bottom;Copper Fill332
+454;;;15.7734;-12.4976;0;Bottom;Copper Fill495
+455;100nF;100 mil [THT, multilayer];3.86969;-269.964;0;Bottom;C47
+456;;;12.9286;-235.916;0;Bottom;Copper Fill85
+457;;DIP (Dual Inline) [THT];11.7437;-261.455;-90;Bottom;IC23
+458;;;29.3516;-185.932;0;Bottom;Via102
+459;;;11.8618;-145.797;0;Bottom;Copper Fill134
+460;;;23.4277;-291.427;0;Bottom;Via147
+461;;;6.7056;-222.378;0;Bottom;Copper Fill371
+462;;;2.9337;-55.3728;0;Bottom;Copper Fill498
+463;;;4.2418;-115.418;0;Bottom;Copper Fill437
+464;;;17.5768;-379.49;0;Bottom;Copper Fill551
+465;;;10.8966;-98.2734;0;Bottom;Copper Fill447
+466;;;27.0002;-162.561;0;Bottom;Copper Fill125
+467;;;26.7462;-73.4068;0;Bottom;Copper Fill465
+468;;;10.668;-238.456;0;Bottom;Copper Fill360
+469;;;23.368;-168.403;0;Bottom;Copper Fill123
+470;;;9.6774;-204.788;0;Bottom;Copper Fill235
+471;;;2.5273;-330.988;0;Bottom;Copper Fill255
+472;;;4.40165;-381.858;0;Bottom;TXT1
+473;;5 mm [THT];26.2246;-270.599;0;Bottom;LED78
+474;;;28.7274;-80.8744;0;Bottom;Copper Fill461
+475;;;29.2862;-39.8534;0;Bottom;Copper Fill483
+476;;;17.145;-65.355;0;Bottom;Copper Fill181
+477;;;23.368;-74.9054;0;Bottom;Copper Fill176
+478;;;3.302;-204.776;0;Bottom;Copper Fill381
+479;;;26.2636;-20.6002;0;Bottom;Copper Fill205
+480;100nF;100 mil [THT, multilayer];4.48217;-378.824;0;Bottom;C50
+481;;;15.8818;-206.593;0;Bottom;TXT1
+482;;;8.0264;-95.835;0;Bottom;Copper Fill165
+483;;DIP (Dual Inline) [THT];11.7437;-276.568;-90;Bottom;IC26
+484;;;19.7222;-336.659;0;Bottom;Via108
+485;;;26.67;-307.087;0;Bottom;Copper Fill322
+486;;;12.6492;-182.754;0;Bottom;Copper Fill115
+487;;;18.9992;-222.733;0;Bottom;Copper Fill370
+488;;;11.5062;-251.474;0;Bottom;Copper Fill243
+489;;;14.1605;-190.526;0;Bottom;Copper Fill531
+490;;5 mm [THT];26.2246;-299.809;0;Bottom;LED71
+491;;;2.5273;-362.586;0;Bottom;Copper Fill265
+492;;;10.0435;-222.602;0;Bottom;TXT1
+493;;;14.8082;-322.098;0;Bottom;Copper Fill311
+494;;;17.9832;-228.194;0;Bottom;Copper Fill366
+495;;;13.1318;-26.1882;0;Bottom;Copper Fill493
+496;;;2.8829;-180.366;0;Bottom;Copper Fill520
+497;;;9.4234;-329.604;0;Bottom;Copper Fill261
+498;;;9.82788;-237.755;0;Bottom;TXT1
+499;;;11.5824;-261.697;0;Bottom;Copper Fill66
+500;;;10.795;-331.928;0;Bottom;Copper Fill307
+501;;5 mm [THT];26.3291;-31.0978;0;Bottom;LED31
+502;;5 mm [THT];26.2246;-241.389;0;Bottom;LED81
+503;;;9.82788;-284.491;0;Bottom;TXT1
+504;;;15.621;-381.776;0;Bottom;Copper Fill277
+505;;;2.7432;-80.4172;0;Bottom;Copper Fill171
+506;;;29.7777;-216.243;0;Bottom;Via153
+507;;;14.8844;-41.7584;0;Bottom;Copper Fill481
+508;;;9.6774;-111.266;0;Bottom;Copper Fill222
+509;;;12.8778;-175.566;0;Bottom;Copper Fill121
+510;1?F;100 mil [THT, tantalum];13.2452;-316.34;0;Bottom;C38
+511;;;22.8972;-336.659;0;Bottom;Via112
+512;;;15.3924;-222.873;0;Bottom;Copper Fill537
+513;;DIP (Dual Inline) [THT];11.7629;-291.813;-90;Bottom;IC17
+514;;;15.8818;-253.329;0;Bottom;TXT1
+515;;;23.368;-121.667;0;Bottom;Copper Fill150
+516;;;6.6802;-315.85;0;Bottom;Copper Fill317
+517;;;28.2956;-191.771;0;Bottom;Copper Fill110
+518;;;29.1592;-349.479;0;Bottom;Copper Fill298
+519;;;2.8321;-227.051;0;Bottom;Copper Fill526
+520;;;9.80536;-331.25;0;Bottom;TXT1
+521;;;14.5796;-189.561;0;Bottom;Copper Fill391
+522;;;17.9832;-368.428;0;Bottom;Copper Fill287
+523;;;2.6797;-82.1698;0;Bottom;Copper Fill210
+524;;DIP (Dual Inline) [THT];11.8482;-27.7958;-90;Bottom;IC4
+525;1?F;100 mil [THT, tantalum];12.9912;-97.8998;0;Bottom;C14
+526;;;8.0264;-33.986;0;Bottom;Copper Fill199
+527;;5 mm [THT];26.2246;-218.021;0;Bottom;LED85
+528;;;21.8186;-203.379;0;Bottom;Copper Fill102
+529;;;13.6801;-380.037;0;Bottom;TXT1
+530;;;28.321;-104.115;0;Bottom;Copper Fill159
+531;;;14.5288;-282.982;0;Bottom;Copper Fill335
+532;;;18.542;-376.302;0;Bottom;Copper Fill283
+533;;;13.9446;-336.576;0;Bottom;Copper Fill305
+534;;;29.5012;-263;0;Bottom;Via156
+535;;;1.9558;-208.484;0;Bottom;Copper Fill98
+536;1?F;100 mil [THT, tantalum];12.7372;-347.455;0;Bottom;C30
+537;;;29.2354;-133.351;0;Bottom;Copper Fill426
+538;;;21.844;-109.881;0;Bottom;Copper Fill156
+539;;;23.2664;-308.585;0;Bottom;Copper Fill39
+540;;;29.2354;-180.087;0;Bottom;Copper Fill397
+541;;;6.7056;-269.114;0;Bottom;Copper Fill345
+542;;;28.2956;-197.613;0;Bottom;Copper Fill106
+543;;;22.0472;-58.8526;0;Bottom;Copper Fill184
+544;;;29.8822;-76.0559;0;Bottom;Via72
+545;;;10.8712;-191.771;0;Bottom;Copper Fill387
+546;;;29.1592;-273.508;0;Bottom;Copper Fill341
+547;;5 mm [THT];26.2021;-311.514;0;Bottom;LED88
+548;;;28.2194;-250.927;0;Bottom;Copper Fill75
+549;;;27.4917;-249.008;0;Bottom;Via149
+550;;;18.7833;-14.9106;0;Bottom;Copper Fill515
+551;;;19.3548;-146.406;0;Bottom;Copper Fill418
+552;;;9.525;-49.1879;0;Bottom;Copper Fill208
+553;;;29.2472;-326.118;0;Bottom;Via159
+554;100nF;100 mil [THT, multilayer];4.12369;-207.226;0;Bottom;C33
+555;;;2.6924;-282.576;0;Bottom;Copper Fill55
+556;;;28.6004;-221.159;0;Bottom;Copper Fill372
+557;;;2.9337;-86.8434;0;Bottom;Copper Fill503
+558;;;28.2448;-344.399;0;Bottom;Copper Fill19
+559;;;2.8194;-159.157;0;Bottom;Copper Fill126
+560;;;19.8266;-196.473;0;Bottom;Via76
+561;220;THT;19.2142;-381.743;0;Bottom;R68
+562;;5 mm [THT];26.2021;-375.775;0;Bottom;LED91
+563;;;10.4013;-326.213;0;Bottom;Copper Fill256
+564;;;9.4234;-376.34;0;Bottom;Copper Fill548
+565;;;14.097;-102.922;0;Bottom;Copper Fill444
+566;;5 mm [THT];26.2246;-229.705;0;Bottom;LED73
+567;;;12.8778;-80.5442;0;Bottom;Copper Fill462
+568;;;21.717;-40.5138;0;Bottom;Copper Fill484
+569;;;2.6289;-190.78;0;Bottom;Copper Fill232
+570;;;2.7686;-344.984;0;Bottom;Copper Fill16
+571;;DIP (Dual Inline) [THT];11.7212;-308.212;-90;Bottom;IC21
+572;;;8.0264;-174.194;0;Bottom;Copper Fill120
+573;;;3.9878;-208.84;0;Bottom;Copper Fill378
+574;;;2.5781;-269.114;0;Bottom;Copper Fill244
+575;;;10.6172;-67.0695;0;Bottom;Copper Fill505
+576;;;12.827;-315.774;0;Bottom;Copper Fill37
+577;220;THT;8.03817;-34.0188;0;Bottom;R43
+578;;;20.0406;-97.1812;0;Bottom;Copper Fill162
+579;;;11.6078;-64.5295;0;Bottom;Copper Fill213
+580;;;29.1592;-226.772;0;Bottom;Copper Fill367
+581;;;3.1877;-377.978;0;Bottom;Copper Fill262
+582;;;20.2076;-151.261;0;Bottom;Via81
+583;;;17.1196;-205.563;0;Bottom;Copper Fill101
+584;;;14.6812;-329.947;0;Bottom;Copper Fill308
+585;;5 mm [THT];26.2021;-323.197;0;Bottom;LED76
+586;;;21.6154;-367.666;0;Bottom;Copper Fill289
+587;;;17.5514;-33.3002;0;Bottom;Copper Fill490
+588;;;27.5962;-62.0858;0;Bottom;Via13
+589;;;19.4818;-52.9344;0;Bottom;Copper Fill187
+590;;;15.494;-82.7159;0;Bottom;Copper Fill517
+591;;;4.699;-160.808;0;Bottom;Copper Fill408
+592;;;28.321;-80.7474;0;Bottom;Copper Fill172
+593;;;28.6004;-251.054;0;Bottom;Copper Fill355
+594;;DIP (Dual Inline) [THT];11.7437;-229.832;-90;Bottom;IC24
+595;;;19.4564;-193.193;0;Bottom;Copper Fill108
+596;;;18.0848;-41.2758;0;Bottom;Copper Fill482
+597;;;9.5758;-298.21;0;Bottom;Copper Fill250
+598;;;14.1097;-237.211;0;Bottom;Copper Fill538
+599;;;16.5989;-378.537;0;Bottom;Copper Fill274
+600;;;12.6492;-89.2564;0;Bottom;Copper Fill168
+601;;;14.8336;-49.48;0;Bottom;Copper Fill478
+602;;;23.5096;-151.261;0;Bottom;Via95
+603;;;11.6078;-204.788;0;Bottom;Copper Fill527
+604;220;THT;7.93369;-236.055;0;Bottom;R63
+605;;;17.1958;-112.091;0;Bottom;Copper Fill155
+606;;5 mm [THT];26.3066;-200.537;0;Bottom;LED46
+607;;;9.525;-34.0495;0;Bottom;Copper Fill211
+608;;;15.4686;-129.452;0;Bottom;Copper Fill523
+609;;5 mm [THT];26.2021;-364.091;0;Bottom;LED79
+610;;;26.924;-349.479;0;Bottom;Copper Fill13
+611;;;23.0242;-56.2438;0;Bottom;Via59
+612;;;12.9286;-35.3576;0;Bottom;Copper Fill200
+613;;;11.938;-99.01;0;Bottom;Copper Fill160
+614;;;8.0264;-127.458;0;Bottom;Copper Fill147
+615;;;18.6182;-282.754;0;Bottom;Copper Fill336
+616;;;25.2222;-374.6;0;Bottom;Copper Fill284
+617;;;28.6512;-332.106;0;Bottom;Copper Fill306
+618;;;28.6512;-64.1866;0;Bottom;Copper Fill470
+619;;DIP (Dual Inline) [THT];11.7212;-323.325;-90;Bottom;IC27
+620;;;8.3566;-205.563;0;Bottom;Copper Fill99
+621;;;28.575;-344.552;0;Bottom;Copper Fill302
+622;;5 mm [THT];26.3066;-206.379;0;Bottom;LED50
+623;;;28.2448;-355.321;0;Bottom;Copper Fill12
+624;;;9.4234;-376.34;0;Bottom;Copper Fill272
+625;;;11.8618;-192.533;0;Bottom;Copper Fill107
+626;;5 mm [THT];26.2021;-334.881;0;Bottom;LED83
+627;;;21.6916;-274.168;0;Bottom;Copper Fill342
+628;;;17.1704;-158.827;0;Bottom;Copper Fill128
+629;;;10.5664;-245.339;0;Bottom;Copper Fill76
+630;;;10.922;-51.5374;0;Bottom;Copper Fill476
+631;220;THT;7.93369;-267.678;0;Bottom;R61
+632;;;11.6078;-111.266;0;Bottom;Copper Fill516
+633;;;19.05;-129.312;0;Bottom;Copper Fill429
+634;;;28.2194;-337.795;0;Bottom;Copper Fill22
+635;;;20.1257;-244.691;0;Bottom;Via117
+636;220;THT;8.14265;-157.992;0;Bottom;R49
+637;;;22.0472;-105.589;0;Bottom;Copper Fill158
+638;;;7.9248;-282.754;0;Bottom;Copper Fill56
+639;;;7.9248;-314.402;0;Bottom;Copper Fill36
+640;;;28.2702;-372.847;0;Bottom;Copper Fill2
+641;;;13.9954;-289.84;0;Bottom;Copper Fill330
+642;1?F;100 mil [THT, tantalum];12.8416;-113.796;0;Bottom;C17
+643;;;2.794;-251.512;0;Bottom;Copper Fill72
+644;;;29.2354;-209.297;0;Bottom;Copper Fill377
+645;;;14.2113;-50.3182;0;Bottom;Copper Fill504
+646;;DIP (Dual Inline) [THT];11.8482;-42.9088;-90;Bottom;IC5
+647;100nF;100 mil [THT, multilayer];3.97417;-83.0408;0;Bottom;C15
+648;;5 mm [THT];26.2246;-264.757;0;Bottom;LED86
+649;;;11.3538;-376.34;0;Bottom;Copper Fill549
+650;;;26.7462;-120.194;0;Bottom;Copper Fill435
+651;;;23.6728;-99.8228;0;Bottom;Copper Fill445
+652;;;29.2697;-232.626;0;Bottom;Via157
+653;;;13.9954;-243.104;0;Bottom;Copper Fill358
+654;;;9.525;-174.308;0;Bottom;Copper Fill233
+655;220;THT;8.06069;-298.158;0;Bottom;R56
+656;;;15.3924;-269.609;0;Bottom;Copper Fill253
+657;1?F;100 mil [THT, tantalum];12.7597;-253.962;0;Bottom;C31
+658;220;THT;7.93369;-220.942;0;Bottom;R59
+659;;;19.9136;-297.079;0;Bottom;Copper Fill328
+660;100nF;100 mil [THT, multilayer];4.20565;-160.532;0;Bottom;C20
+661;;;6.8072;-206.198;0;Bottom;Copper Fill379
+662;;;2.8829;-118.492;0;Bottom;Copper Fill510
+663;;;19.939;-237.364;0;Bottom;Copper Fill81
+664;;;28.321;-28.1694;0;Bottom;Copper Fill203
+665;;;2.6924;-220.727;0;Bottom;Copper Fill91
+666;;;10.5664;-292.075;0;Bottom;Copper Fill48
+667;;;9.525;-80.7855;0;Bottom;Copper Fill218
+668;;;13.0302;-189.231;0;Bottom;Copper Fill113
+669;;;29.3742;-92.4389;0;Bottom;Via73
+670;;;9.4234;-236.081;0;Bottom;Copper Fill241
+671;;5 mm [THT];26.2246;-235.547;0;Bottom;LED89
+672;;;28.2194;-226.797;0;Bottom;Copper Fill88
+673;;;2.8321;-242.291;0;Bottom;Copper Fill529
+674;;;9.525;-344.946;0;Bottom;Copper Fill263
+675;;;17.5768;-381.776;0;Bottom;Copper Fill555
+676;;;12.7762;-360.96;0;Bottom;Copper Fill294
+677;;;29.2472;-372.854;0;Bottom;Via160
+678;;;7.0358;-229.845;0;Bottom;Copper Fill364
+679;;;7.1374;-27.7884;0;Bottom;Copper Fill491
+680;;;14.2113;-97.0542;0;Bottom;Copper Fill518
+681;;;8.3058;-345.746;0;Bottom;Copper Fill15
+682;;;3.3528;-111.304;0;Bottom;Copper Fill440
+683;100nF;100 mil [THT, multilayer];4.10117;-300.719;0;Bottom;C34
+684;;;15.0368;-159.843;0;Bottom;Copper Fill409
+685;1?F;100 mil [THT, tantalum];12.9912;-51.1638;0;Bottom;C8
+686;;;19.9136;-250.343;0;Bottom;Copper Fill356
+687;;;9.6774;-158.052;0;Bottom;Copper Fill228
+688;;;13.0302;-48.972;0;Bottom;Copper Fill192
+689;;;20.0406;-190.679;0;Bottom;Copper Fill109
+690;;;11.5062;-298.21;0;Bottom;Copper Fill251
+691;220;THT;8.16517;-111.235;0;Bottom;R46
+692;;;7.1374;-168.022;0;Bottom;Copper Fill405
+693;;;17.5768;-379.49;0;Bottom;Copper Fill275
+694;;;28.321;-86.5894;0;Bottom;Copper Fill169
+695;;;25.2984;-47.6512;0;Bottom;Copper Fill479
+696;;;23.0016;-196.473;0;Bottom;Via77
+697;;5 mm [THT];26.2246;-282.283;0;Bottom;LED92
+698;;;28.2194;-215.113;0;Bottom;Copper Fill96
+699;;;10.9728;-316.84;0;Bottom;Copper Fill315
+700;;;7.0358;-354.94;0;Bottom;Copper Fill296
+701;;;14.1605;-143.79;0;Bottom;Copper Fill524
+702;;;21.717;-343.536;0;Bottom;Copper Fill18
+703;;;11.5824;-308.433;0;Bottom;Copper Fill38
+704;;;12.8778;-128.83;0;Bottom;Copper Fill148
+705;;;14.0716;-149.658;0;Bottom;Copper Fill414
+706;;DIP (Dual Inline) [THT];11.7212;-354.948;-90;Bottom;IC22
+707;;;29.8822;-29.3198;0;Bottom;Via9
+708;;;29.2862;-86.5894;0;Bottom;Copper Fill456
+709;;;2.8194;-204.623;0;Bottom;Copper Fill100
+710;;;21.209;-127.636;0;Bottom;Copper Fill144
+711;;;10.7696;-285.192;0;Bottom;Copper Fill333
+712;;;15.7734;-386.894;0;Bottom;Copper Fill281
+713;;;19.8882;-343.841;0;Bottom;Copper Fill303
+714;;;2.7432;-48.7688;0;Bottom;Copper Fill190
+715;;;6.9088;-113.209;0;Bottom;Copper Fill438
+716;;;19.5072;-99.7212;0;Bottom;Copper Fill448
+717;;;20.2076;-197.997;0;Bottom;Via82
+718;;;12.8524;-174.042;0;Bottom;Copper Fill403
+719;;;14.6558;-236.576;0;Bottom;Copper Fill361
+720;;5 mm [THT];26.3291;-36.9398;0;Bottom;LED29
+721;220;THT;8.01565;-142.625;0;Bottom;R53
+722;;;14.9098;-135.18;0;Bottom;Copper Fill424
+723;;;20.2302;-57.7678;0;Bottom;Via43
+724;;;10.4013;-357.836;0;Bottom;Copper Fill269
+725;;;26.8732;-302.743;0;Bottom;Copper Fill41
+726;;DIP (Dual Inline) [THT];11.8256;-121.289;-90;Bottom;IC12
+727;;;7.1374;-121.286;0;Bottom;Copper Fill434
+728;;DIP (Dual Inline) [THT];11.7212;-370.061;-90;Bottom;IC25
+729;;5 mm [THT];26.3291;-60.3078;0;Bottom;LED34
+730;;;11.5824;-214.961;0;Bottom;Copper Fill94
+731;;;16.2433;-14.9106;0;Bottom;Copper Fill513
+732;;;23.5096;-197.997;0;Bottom;Via96
+733;;;14.986;-88.4436;0;Bottom;Copper Fill454
+734;;;28.2194;-273.533;0;Bottom;Copper Fill60
+735;;;28.321;-98.2734;0;Bottom;Copper Fill163
+736;;;23.4188;-286.691;0;Bottom;Copper Fill331
+737;;;8.0264;-80.722;0;Bottom;Copper Fill173
+738;;5 mm [THT];26.3066;-118.749;0;Bottom;LED47
+739;;;19.939;-284.1;0;Bottom;Copper Fill53
+740;;;28.2194;-361.163;0;Bottom;Copper Fill6
+741;;5 mm [THT];26.2021;-317.355;0;Bottom;LED80
+742;;;19.8492;-102.98;0;Bottom;Via60
+743;;;28.2956;-150.877;0;Bottom;Copper Fill133
+744;;;2.5654;-15.9139;0;Bottom;Copper Fill501
+745;;DIP (Dual Inline) [THT];11.8256;-183.138;-90;Bottom;IC15
+746;;;29.2608;-115.799;0;Bottom;Copper Fill436
+747;;;15.621;-379.49;0;Bottom;Copper Fill550
+748;;;28.702;-98.4004;0;Bottom;Copper Fill446
+749;1?F;100 mil [THT, tantalum];13.2677;-222.847;0;Bottom;C37
+750;220;THT;8.01565;-127.512;0;Bottom;R51
+751;;;11.6078;-168.377;0;Bottom;Copper Fill122
+752;;;2.5273;-315.85;0;Bottom;Copper Fill254
+753;;;3.1877;-377.978;0;Bottom;Copper Fill546
+754;;;19.9898;-110.186;0;Bottom;Copper Fill442
+755;;;10.5664;-338.786;0;Bottom;Copper Fill20
+756;;DIP (Dual Inline) [THT];11.8449;-151.647;-90;Bottom;IC10
+757;220;THT;7.91117;-329.546;0;Bottom;R66
+758;;;10.6172;-60.656;0;Bottom;Copper Fill179
+759;;;2.6289;-175.693;0;Bottom;Copper Fill230
+760;;;7.2136;-198.4;0;Bottom;Copper Fill384
+761;;;2.8829;-133.63;0;Bottom;Copper Fill511
+762;220;THT;8.16517;-64.4988;0;Bottom;R45
+763;;;28.2194;-238.481;0;Bottom;Copper Fill82
+764;;;1.9558;-348.743;0;Bottom;Copper Fill14
+765;;;15.7734;-386.69;0;Bottom;Copper Fill1
+766;1?F;100 mil [THT, tantalum];13.3722;-82.6598;0;Bottom;C13
+767;;;14.8336;-300;0;Bottom;Copper Fill325
+768;;5 mm [THT];26.2246;-288.125;0;Bottom;LED84
+769;;;9.525;-95.9239;0;Bottom;Copper Fill219
+770;;;28.2956;-174.245;0;Bottom;Copper Fill118
+771;;5 mm [THT];26.3291;-107.044;0;Bottom;LED37
+772;;;9.5758;-251.474;0;Bottom;Copper Fill242
+773;;;21.1074;-221.082;0;Bottom;Copper Fill89
+774;;;21.1074;-314.554;0;Bottom;Copper Fill33
+775;;;21.59;-320.93;0;Bottom;Copper Fill314
+776;;;17.4244;-360.452;0;Bottom;Copper Fill295
+777;;;20.1257;-291.427;0;Bottom;Via120
+778;;;14.859;-228.601;0;Bottom;Copper Fill365
+779;;;28.702;-110.846;0;Bottom;Copper Fill441
+780;;;28.321;-45.6954;0;Bottom;Copper Fill193
+781;1?F;100 mil [THT, tantalum];12.8416;-160.532;0;Bottom;C18
+782;;;7.9248;-329.515;0;Bottom;Copper Fill28
+783;;;26.7462;-166.93;0;Bottom;Copper Fill406
+784;;;21.209;-80.8744;0;Bottom;Copper Fill170
+785;;;15.494;-82.7159;0;Bottom;Copper Fill225
+786;;;7.0358;-42.9014;0;Bottom;Copper Fill480
+787;100nF;100 mil [THT, multilayer];3.97417;-98.1538;0;Bottom;C16
+788;;;9.4234;-282.817;0;Bottom;Copper Fill248
+789;;5 mm [THT];26.2021;-358.249;0;Bottom;LED87
+790;;5 mm [THT];26.3291;-112.886;0;Bottom;LED39
+791;220;THT;7.91117;-376.282;0;Bottom;R64
+792;;;14.7828;-253.264;0;Bottom;Copper Fill353
+793;;;10.6172;-107.392;0;Bottom;Copper Fill153
+794;;;2.6924;-267.463;0;Bottom;Copper Fill63
+795;;;7.1374;-183.135;0;Bottom;Copper Fill394
