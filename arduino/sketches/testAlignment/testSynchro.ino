@@ -2,8 +2,8 @@
 
 const byte H_RES = 30;
 volatile unsigned long nextFrameTime = 0;
-volatile byte nextHIndex = 0;
 volatile unsigned long horizontalStepDelta = 0;
+volatile unsigned int  nextHIndex = 0;
 
 byte hframes [][3] =   {
   { 0B00100100, 0B10010010, 0B01001001 }, //red
@@ -25,12 +25,13 @@ void  setupTestSynchro() {
 void loopTestSynchro() {
   if (micros() < nextFrameTime)
     return;
+  unsigned int currentFrame = nextHIndex;
+  nextHIndex++;
   nextFrameTime += horizontalStepDelta;
   showVFrame(nextHIndex);
-  nextHIndex++;
 }
 
-void showVFrame(byte hIndex) {
+void showVFrame(unsigned int hIndex) {
   byte* hFramme = hframes[hIndex % 3];
   writeToSrs(hFramme);
 }
@@ -39,9 +40,9 @@ volatile unsigned long lastTurnTime = 0;
 void turnDetected() {
   unsigned long currentTurnTime = micros();
   unsigned long turnDuration = currentTurnTime - lastTurnTime;
-  if (turnDuration < 10000)
+  if (turnDuration < 50000)
     return;
-//  Serial.println("New turn" + String(micros()));
+  //  Serial.println("New turn" + String(micros()));
   nextFrameTime = lastTurnTime =  currentTurnTime;
   horizontalStepDelta = turnDuration / H_RES;
   nextHIndex = 0;

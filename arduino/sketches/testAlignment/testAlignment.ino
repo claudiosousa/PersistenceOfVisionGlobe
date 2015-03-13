@@ -6,9 +6,10 @@ void setup() {
   //setupTestRgb();
 }
 
-void loop() {
-  //loopTestRgb();
+void loop() {  
    loopTestSynchro();
+   
+   //loopTestRgb();
 }
 
 
