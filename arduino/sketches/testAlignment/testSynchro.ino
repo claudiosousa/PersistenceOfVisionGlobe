@@ -1,10 +1,12 @@
 #define SENSOR_PIN 2
 
-const byte H_RES = 30;
+const byte H_RES = 60;
 volatile unsigned long nextFrameTime = 0;
 volatile unsigned long horizontalStepDelta = 0;
 volatile unsigned int  nextHIndex = 0;
+volatile bool ledsdWaitingForNextTurn = true;
 
+byte ledsClear[] = {0, 0, 0};
 byte hframes [][3] =   {
   { 0B00100100, 0B10010010, 0B01001001 }, //red
   { 0B01001001, 0B00100100, 0B10010010 },//green
@@ -25,6 +27,14 @@ void  setupTestSynchro() {
 void loopTestSynchro() {
   if (micros() < nextFrameTime)
     return;
+
+  if (nextHIndex == H_RES) {
+    if (!ledsdWaitingForNextTurn) {
+      ledsdWaitingForNextTurn = true;
+      writeToSrs(ledsClear);
+    }
+    return;
+  }
   unsigned int currentFrame = nextHIndex;
   nextHIndex++;
   nextFrameTime += horizontalStepDelta;
@@ -40,11 +50,12 @@ volatile unsigned long lastTurnTime = 0;
 void turnDetected() {
   unsigned long currentTurnTime = micros();
   unsigned long turnDuration = currentTurnTime - lastTurnTime;
-  if (turnDuration < 50000)
+  if (turnDuration < 10000)
     return;
   //  Serial.println("New turn" + String(micros()));
   nextFrameTime = lastTurnTime =  currentTurnTime;
   horizontalStepDelta = turnDuration / H_RES;
   nextHIndex = 0;
+  ledsdWaitingForNextTurn = false;
 }
 
