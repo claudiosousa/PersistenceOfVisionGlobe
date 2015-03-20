@@ -1,0 +1,9 @@
+Arduino GND to RF Module Pin 1 ( GND )
+Arduino 3.3V to RF Module Pin 2 ( VCC / 3.3V ) *** RF Module can only take 3.3V 
+Arduino Pin 9? to RF Module Pin 3 ( CE )
+Arduino Pin 10? to RF Module Pin 4 ( CSN )
+Arduino Pin 13 to RF Module Pin 5 ( SCK )
+Arduino Pin 11 to RF Module Pin 6 ( MOSI)
+Arduino Pin 12 to RF Module Pin 7 ( MISO )
+
+RF Module Pin 8 (IRQ) is not connected

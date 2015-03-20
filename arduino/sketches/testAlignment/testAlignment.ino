@@ -1,15 +1,15 @@
 
 void setup() {
   setupSrs();
-  setupTestSynchro();
+  //setupTestSynchro();
   
-  //setupTestRgb();
+  setupTestRgb();
 }
 
 void loop() {  
-   loopTestSynchro();
+   //loopTestSynchro();
    
-   //loopTestRgb();
+   loopTestRgb();
 }
 
 
