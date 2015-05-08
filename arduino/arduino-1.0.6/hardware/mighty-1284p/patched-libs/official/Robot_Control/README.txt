@@ -1,0 +1,6 @@
+
+This version patched for compatibility with 2014 "mighty-1284p" core refresh. (Changes to SdCard.h)
+
+Note: This is not a complete port of the RobotControl lib, only a single file (SdCard.h) with changes that would be required for SPI pin assignment if ever a full port to using the mighty-1284p core was undertaken. It is unclear, however, whether the RobotControl lib could be or should be applied to anything except the Arduino RobotControl hardware. The library seems to be a melange of many other libs, and has the potential to interfere with files with the same name in other standard libs (e.g., SPI.h, SPI.cpp). Given these considerations, it is not intended at this stage to support the lib for the mighty-1284p core project beyond providing this single patched file for reference. 
+
+How and when it should be deployed it left to the user, but because of the potential problems indicated above, the recommendation is to not install the RobotControl lib unless there is a definite requirement, and you fully understand how the Arduino IDE build process works (and when it doesn't) so you can debug any snarls resulting from the wrong files picked up from the libs containing files of the same name.
