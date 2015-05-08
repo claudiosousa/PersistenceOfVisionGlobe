@@ -11,9 +11,11 @@
 #define SR_DATA 5
 
 byte SrsCount = 3;
+
 void setupSrs(){
   DDRD = (1<<SR_LATCH) | (1<<SR_CLOCK) | (1<<SR_DATA);
 }
+
 void writeToSrs(byte* outputbuffer) {
 
   cbi(SR_PORT, SR_LATCH);
