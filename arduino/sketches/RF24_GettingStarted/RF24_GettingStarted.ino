@@ -8,9 +8,12 @@
 #include <SPI.h>
 #include "RF24.h"
 
+
 /****************** User Config ***************************/
 /***      Set this radio as radio number 0 or 1         ***/
-bool radioNumber = 1;
+// Used to control whether this node is sending or receiving (0: receive, 1:send)
+bool role = 1;
+bool radioNumber = role;
 
 /* Hardware configuration: Set up nRF24L01 radio on SPI bus plus pins 7 & 8 */
 RF24 radio(7, 8);
@@ -18,8 +21,6 @@ RF24 radio(7, 8);
 
 byte addresses[][6] = {"1Node", "2Node"};
 
-// Used to control whether this node is sending or receiving
-bool role = 1;
 
 void setup() {
   Serial.begin(57600);
