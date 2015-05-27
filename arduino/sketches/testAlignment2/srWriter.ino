@@ -20,12 +20,12 @@ void writeToSrs(byte* outputbuffer) {
 
   cbi(SR_PORT, SR_LATCH);
 
- for (int i = 3-1; i >= 0 ; i--) {
+  for (int i = 3-1; i >= 0 ; i--) {
     byte outputByte = outputbuffer[i];
     for  (int j = 0; j <= 7; j++) {
       cbi(SR_PORT, SR_CLOCK);
-      
-      PORTA = PORTD = (outputByte & (1 << j))?255:0;
+
+      PORTD =   PORTA = (outputByte & (1 << j))?255:0;
 
       sbi(SR_PORT, SR_CLOCK);
     }
@@ -33,5 +33,6 @@ void writeToSrs(byte* outputbuffer) {
 
   sbi(SR_PORT, SR_LATCH);
 }
+
 
 

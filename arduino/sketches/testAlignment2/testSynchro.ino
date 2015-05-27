@@ -41,19 +41,19 @@ void loopTestSynchro() {
     return;
 
   if (nextHIndex == H_RES) {
-    if (!ledsdWaitingForNextTurn) {
+    /*if (!ledsdWaitingForNextTurn) {
       ledsdWaitingForNextTurn = true;
       writeToSrs(blank);
-    }
+    }*/
     return;
   }
-  nextHIndex++;
   nextFrameTime += horizontalStepDelta;
   showVFrame(nextHIndex);
+  nextHIndex++;
 }
 
 void showVFrame(unsigned int hIndex) {
-  byte* hFramme = hframes+(hIndex % 8);
+  byte* hFramme = hframes+(hIndex % 6)*3;
   writeToSrs(hFramme);
 }
 

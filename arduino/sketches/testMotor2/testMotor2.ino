@@ -1,6 +1,6 @@
 #include <Servo.h>
 
-//Values:0-2000-900-1200
+//Values:0-2000-700-900-1200
 int value = 0; // set values you need to zero
 int lastVal = -1;
 Servo firstESC, secondESC; //Create as much as Servoobject you want. You can controll 2 or more Servos at the same time
