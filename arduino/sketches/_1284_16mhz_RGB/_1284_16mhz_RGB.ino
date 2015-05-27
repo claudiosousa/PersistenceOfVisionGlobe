@@ -8,8 +8,7 @@ void setup() {
   pinMode(clockPin, OUTPUT);
   pinMode(ledPin, OUTPUT);
   DDRA = B11111111; 
-  DDRD = B11111111; 
-  PORTA = 0;  
+  DDRD = B11111111;  
 }
 //GBR GBR GB  R GBR GBR G  BR GBR GBR
 //100 010 00  1 100 010 1  01 100 010
