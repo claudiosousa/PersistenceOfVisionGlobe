@@ -12,13 +12,13 @@ void setup() {
   setupColors();
   setupTestSynchro();
 
-  //setupTestRgb();
+  setupTestRgb();
 }
 
 void loop() {  
-  //loopTestSynchro();
+  loopTestSynchro();
 
-  loopTestRgb();
+  //loopTestRgb();
 }
 
 

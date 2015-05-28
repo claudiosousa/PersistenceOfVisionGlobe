@@ -1,12 +1,12 @@
 #define SENSOR_PIN 2
 
-const byte H_RES = 90;
+const byte H_RES = 150;
+volatile unsigned long turnDuration = 0;
+volatile unsigned long lastTurnTime = 0;
 volatile unsigned long nextFrameTime = 0;
-volatile unsigned long horizontalStepDelta = 0;
 volatile unsigned int  nextHIndex = 0;
 volatile bool ledsdWaitingForNextTurn = true;
 
-//byte hframes[7][3] ;
 byte* hframes = (byte*)malloc(24);
 
 void fillArray(byte* color){
@@ -34,7 +34,6 @@ void  setupTestSynchro() {
   EIMSK = _BV(INT2);           //enable external interrupt
 
   nextFrameTime -= 1;
-  //  Serial.println(String(nextFrameTime));
 }
 
 void loopTestSynchro() {
@@ -42,15 +41,11 @@ void loopTestSynchro() {
     return;
 
   if (nextHIndex == H_RES) {
-    /*if (!ledsdWaitingForNextTurn) {
-      ledsdWaitingForNextTurn = true;
-      writeToSrs(blank);
-    }*/
     return;
   }
-  nextFrameTime += horizontalStepDelta;
   showVFrame(nextHIndex);
   nextHIndex++;
+  nextFrameTime = lastTurnTime + (nextHIndex * turnDuration) / H_RES; 
 }
 
 void showVFrame(unsigned int hIndex) {
@@ -58,15 +53,13 @@ void showVFrame(unsigned int hIndex) {
   writeToSrs(hFramme);
 }
 
-volatile unsigned long lastTurnTime = 0;
 ISR(INT2_vect){
   unsigned long currentTurnTime = micros();
-  unsigned long turnDuration = currentTurnTime - lastTurnTime;
-  if (turnDuration < 10000)
+  turnDuration = currentTurnTime - lastTurnTime;
+  if (turnDuration < 10000){
     return;
-  //  Serial.println("New turn" + String(micros()));
-  nextFrameTime = lastTurnTime =  currentTurnTime;
-  horizontalStepDelta = turnDuration / H_RES;
+  }
+  nextFrameTime = lastTurnTime =  currentTurnTime;  
   nextHIndex = 0;
   ledsdWaitingForNextTurn = false;
 }
