@@ -11,9 +11,9 @@ for (var i = 0; i < byteArrayLength; i++) {
 //  SR23        SR22        SR21
 //  RBGRBGRG    BRBGRGBR    GBRGBRGB
 var mappings = [//r, g, b
-	[18, 21, 8, 11, 14, 1, 4, 7],
-	[17, 20, 23, 10, 12, 0, 2, 5],
-	[16, 20, 22, 9, 13, 15, 3, 6]
+	[0, 3, 6, 9, 12, 15, 18, 21],
+	[1, 4, 7, 10, 13, 16, 19, 22],
+	[2, 5, 8, 11, 14, 17, 20, 23]
 ]
 
 // [H-A 23 W0]    [H-A 22 W0]    ...  [H-A 0 W0] 
@@ -24,7 +24,7 @@ var mappings = [//r, g, b
 // [H-A 23 W/2-1] [H-A 22 W/2-1] ...  [H-A 0 W2/1] 
 // [H-A 23 W]     [H-A 22 W]     ...  [H-A 0 W] 
 
-var srs = height / 3;
+var srs = height / 8 * 3;
 var applyPixelColors = function (x, y, colors) {
 	var hHalf = Math.floor(width / 2);
 	var isBack = x >= hHalf;
@@ -40,7 +40,7 @@ var applyPixelColors = function (x, y, colors) {
 	for (var i = 0; i < colors.length; i++) {
 		if (!colors[i])
 			continue;
-		var ledColorByte = 23- mappings[i][srLed];
+		var ledColorByte = mappings[i][srLed];
 		result[xOffsetByte + ledColorByte] |= (1 << yOffsetBit);
 	}
 }
@@ -53,11 +53,11 @@ PNG.decode('test.png', function (pixels) {
 	for (var i = 0; i < pixels.length; i += 4) {
 
 		var colors = [pixels[i], pixels[i + 1], pixels[i + 2]]
-		if (pixel % width == 0)
+		if (false)
 			console.log(JSON.stringify(colors) + '\t');
 		applyPixelColors(pixel % width, Math.floor(pixel / width), colors)
 		pixel++;
 	}
 	var str = JSON.stringify(result);
-	console.log('{'+str.substr(1, str.length-2)+"}");
+	console.log('{' + str.substr(1, str.length - 2) + "}");
 });
