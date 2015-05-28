@@ -1,6 +1,6 @@
 #define SENSOR_PIN 2
 
-const byte H_RES = 90;
+const byte H_RES = 120;
 volatile unsigned long nextFrameTime = 0;
 volatile unsigned long horizontalStepDelta = 0;
 volatile unsigned int  nextHIndex = 0;
