@@ -5,18 +5,21 @@ void setupTestRgb() {
 }
 void showColor(byte* color){
   writeToSrs(color);
-  delay(3000);
+  delay(1000);
 }
 
 void loopTestRgb() {
-  showColor(red);
+  showColor(t0);
+  showColor(t1);
+  showColor(t2);
+    showColor(t3);
+  showColor(t4);
+  showColor(t5);
+/*  showColor(red);
   showColor(green);
   showColor(blue);
-  showColor(purple);
-  showColor(yellow);
-  showColor(cyan);
   showColor(white);
-  showColor(blank);               
-
+  showColor(blank);   
+*/  
 }
 
