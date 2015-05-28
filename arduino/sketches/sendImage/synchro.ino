@@ -4,7 +4,8 @@ const byte H_RES = 120;
 volatile unsigned long nextFrameTime = 0;
 volatile unsigned long horizontalStepDelta = 0;
 volatile unsigned int  nextHIndex = 0;
-boolean ledsdWaitingForNextTurn = false;
+volatile unsigned long turnDuration = 0;
+volatile unsigned long lastTurnTime = 0;
 
 void  setupSynchro() {
 
@@ -29,8 +30,8 @@ void loopSynchro() {
     return;
   }
   showVFrame(nextHIndex);
-  nextFrameTime += horizontalStepDelta;
   nextHIndex++;
+  nextFrameTime = lastTurnTime + (nextHIndex * turnDuration) / H_RES; 
 }
 
 void showVFrame(unsigned int hIndex) {
@@ -38,17 +39,14 @@ void showVFrame(unsigned int hIndex) {
     writeToSrs(hFramme, hIndex>=(H_RES/2));
 }
 
-volatile unsigned long lastTurnTime = 0;
 ISR(INT2_vect){
   unsigned long currentTurnTime = micros();
-  unsigned long turnDuration = currentTurnTime - lastTurnTime;
+  turnDuration = currentTurnTime - lastTurnTime;
   if (turnDuration < 10000)
     return;
   //  Serial.println("New turn" + String(micros()));
   nextFrameTime = lastTurnTime =  currentTurnTime;
-  horizontalStepDelta = turnDuration / H_RES;
   nextHIndex = 0;
-  ledsdWaitingForNextTurn = false;
 }
 
 

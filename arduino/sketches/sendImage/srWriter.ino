@@ -21,7 +21,6 @@ void writeToSrs(byte* outputbuffer, boolean reverse) {
   cbi(SR_PORT, SR_LATCH);
 
   for (int i = 24-1; i >= 0 ; i--) {
-    byte outputByte = outputbuffer[i];
     cbi(SR_PORT, SR_CLOCK);
 
     if (reverse){
