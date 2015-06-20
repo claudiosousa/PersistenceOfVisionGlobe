@@ -20,18 +20,19 @@ void  setupSynchro() {
 
 void loopSynchro() {
   if (micros() < nextFrameTime)
-    return;
+    return false;
 
   if (nextHIndex == H_RES) {
     /*if (!ledsdWaitingForNextTurn) {
      ledsdWaitingForNextTurn = true;
      writeToSrs(blank);
      }*/
-    return;
+    return false;
   }
   showVFrame(nextHIndex);
   nextHIndex++;
   nextFrameTime = lastTurnTime + (nextHIndex * turnDuration) / H_RES; 
+  return true;
 }
 
 void showVFrame(unsigned int hIndex) {

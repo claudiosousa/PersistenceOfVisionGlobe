@@ -12,25 +12,32 @@
 /****************** User Config ***************************/
 /***      Set this radio as radio number 0 or 1         ***/
 // Used to control whether this node is sending or receiving (0: receive, 1:send)
-#define arduino328sender true
+#define arduino328sender true    
 
 #if arduino328sender
-  RF24 radio(1, 0);
-  bool role = 0;
+  RF24 radio(9, 10);
+  bool role = 1;
 #else
-  RF24 radio(7, 8);
+  RF24 radio(9, 10);
   bool role = 0;
 #endif
 
+ 
 bool radioNumber = role;
 
 /* Hardware configuration: Set up nRF24L01 radio on SPI bus plus pins 7 & 8 */
 /**********************************************************/
 
-byte addresses[][6] = {"1Node", "2Node"};
-
+byte addresses[][6] = {"BoxPc", "PcBox"};
+const int datalength =  1540;
+byte data[datalength];
 
 void setup() {
+   randomSeed(analogRead(0));              //Seed for random number generation
+  pinMode(13, OUTPUT);
+  for(int i=0; i<datalength; i++){
+     data[i] = random(255);        
+  }
   Serial.begin(57600);
   Serial.println(F("RF24/examples/GettingStarted"));
   Serial.println(F("*** PRESS 'T' to begin transmitting to the other node"));
@@ -40,6 +47,14 @@ void setup() {
   // Set the PA Level low to prevent power supply related issues since this is a
   // getting_started sketch, and the likelihood of close proximity of the devices. RF24_PA_MAX is default.
   //radio.setPALevel(RF24_PA_LOW);
+
+  radio.setPALevel(RF24_PA_MAX);
+//  radio.setDataRate(RF24_250KBPS);
+//  radio.setAutoAck(1);                     // Ensure autoACK is enabled
+  //radio.setRetries(15,15);                  // Optionally, increase the delay between retries & # of retries
+  
+  //radio.setCRCLength(RF24_CRC_8);  
+
 
   // Open a writing and reading pipe on each radio, with opposite addresses
   if (radioNumber) {
@@ -54,6 +69,7 @@ void setup() {
   radio.startListening();
 }
 
+byte tosend = 0;
 void loop() {
 
 
@@ -65,12 +81,12 @@ void loop() {
 
     Serial.println(F("Now sending"));
 
-    unsigned long time = micros();                             // Take the time, and send it.  This will block until complete
-    if (!radio.write( &time, sizeof(unsigned long) )) {
+    unsigned long sent_time = micros();                             // Take the time, and send it.  This will block until complete
+    if (!radio.write(&data, datalength)) {
       Serial.println(F("failed"));
-    }
-
-
+    }else
+      Serial.println(F("No failed!"));
+/*
     radio.startListening();                                    // Now, continue listening
     unsigned long started_waiting_at = micros();               // Set up a timeout period, get the current microseconds
     boolean timeout = false;                                   // Set up a variable to indicate if a response was received or not
@@ -85,22 +101,25 @@ void loop() {
     if ( timeout ) {                                            // Describe the results
       Serial.println(F("Failed, response timed out."));
     } else {
-      unsigned long got_time;                                 // Grab the response, compare, and send to debugging spew
-      radio.read( &got_time, sizeof(unsigned long) );
+      */
+      byte res;
+      radio.read( &res, 1 );
       unsigned long time = micros();
 
       // Spew it
       Serial.print(F("Sent "));
-      Serial.print(time);
+      Serial.print(tosend);
       Serial.print(F(", Got response "));
-      Serial.print(got_time);
+      Serial.print(res);
       Serial.print(F(", Round-trip delay "));
-      Serial.print(time - got_time);
+      Serial.print(time - sent_time);
       Serial.println(F(" microseconds"));
+      /*
     }
 
     // Try again 1s later
-    delay(1000);
+    //delay(1000);
+    */
   }
 
 
@@ -109,20 +128,25 @@ void loop() {
 
   if ( role == 0 )
   {
-    unsigned long got_time;
-
+    unsigned long got_time = micros();
+ 
     if ( radio.available()) {
       // Variable for the received timestamp
       while (radio.available()) {                                   // While there is data ready
-        radio.read( &got_time, sizeof(unsigned long) );             // Get the payload
+        radio.read( &data, 1 );             // Get the payload
       }
 
-      radio.stopListening();                                        // First, stop listening so we can talk
-      radio.write( &got_time, sizeof(unsigned long) );              // Send the final one back.
-      radio.startListening();                                       // Now, resume listening so we catch the next packets.
-      Serial.print(F("Sent response "));
-      Serial.println(got_time);
+      radio.stopListening();  
+      // First, stop listening so we can talk
+      radio.write( &data[0], 1);              // Send the final one back.
+      radio.startListening();    
+      Serial.print(F("Received "));
+      Serial.println(data[0]);
+// Now, resume listening so we catch the next packets.
+ //     Serial.print(F("Sent response "));
+//      Serial.println(got_time);
     }
+    //Serial.println(micros()-got_time);
   }
 
 
