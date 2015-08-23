@@ -1,0 +1,252 @@
+/* Base colors */
+/* Context elements */
+/* Parametric mixins to abstract specific vendor prefixes */
+.inline {
+  display: inline-block;
+}
+/* Imports */
+@-moz-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-moz-keyframes vflip {
+  to {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+}
+@-webkit-keyframes vflip {
+  to {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+}
+@-o-keyframes vflip {
+  to {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+}
+@-ms-keyframes vflip {
+  to {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+}
+@keyframes vflip {
+  to {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+}
+@-moz-keyframes vrestore {
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes vrestore {
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes vrestore {
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-ms-keyframes vrestore {
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes vrestore {
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+.pov body {
+  font-family: 'titilliumregular', 'PT Sans', Arial, 'Helvetica Neue', Helvetica, Tahoma, sans-serif;
+  overflow: hidden;
+  background: transparent url(images/bkg01.jpg) repeat 0 0;
+  background-size: cover;
+  color: #ffffff;
+}
+.pov input[type="text"] {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: #888;
+}
+.pov #pageContent,
+.pov .main,
+.pov .panel {
+  height: 100%;
+}
+.pov .uk-offcanvas-bar {
+  background: rgba(33, 33, 33, 0.9);
+}
+.pov .panel {
+  color: rgba(255, 255, 255, 0.4);
+  background: transparent;
+  cursor: pointer;
+  font-size: 200%;
+  font-family: pov;
+  padding-top: 20px;
+  position: absolute;
+  top: 0px;
+}
+.pov .panel.uk-button {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -moz-transition: -moz-transform 0.5s ease;
+  -o-transition: -o-transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+.pov .panel.uk-button:hover,
+.pov .panel.uk-button:focus {
+  background: rgba(38, 38, 38, 0.9);
+}
+.pov .panel.uk-button:hover,
+.pov .panel.uk-button:focus {
+  color: rgba(255, 255, 255, 0.8);
+}
+.pov .panel.uk-button.open:after {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -moz-transition: -moz-transform 0.5s ease;
+  -o-transition: -o-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.pov .leftpanel {
+  left: 0px;
+}
+.pov .rightpanel {
+  right: 0px;
+}
+.pov .leftpanel:after {
+  content: '\e802';
+}
+.pov .rightpanel:after {
+  content: '\e801';
+}
+.pov .content {
+  position: relative;
+  padding: 20px 60px;
+  width: 80%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  min-width: 700px;
+}
+.pov #menu .label {
+  margin: 10px 2px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #aaa;
+}
+.pov #menu .label.selected {
+  color: lightgreen;
+}
+@font-face {
+  font-family: 'pov';
+  src: url('../font/pov.eot?5170121');
+  src: url('../font/pov.eot?5170121#iefix') format('embedded-opentype'), url('../font/pov.woff?5170121') format('woff'), url('../font/pov.ttf?5170121') format('truetype'), url('../font/pov.svg?5170121#pov') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

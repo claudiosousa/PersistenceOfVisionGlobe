@@ -1,0 +1,851 @@
+[
+    {
+        "name": "QQE03-12SPUD",
+        "id": 122,
+        "description": "SPUD amplifier with one QQE03-12 per channels.",
+        "damping factor": 1.33,
+        "power": "8W",
+        "bandwidth": "unknown",
+        "amplification factor": 3.2,
+        "inverter": false,
+        "tubes": [
+            {
+                "name": "Left: QQE03-12"
+            },
+            {
+                "name": "Right: QQE03-12"
+            }
+        ],
+        "errors": [
+            {
+                "id": 2,
+                "descr": "Discharge too long"
+            },
+            {
+                "id": 3,
+                "descr": "Current during heat time"
+            },
+            {
+                "id": 4,
+                "descr": "Regulation too long"
+            },
+            {
+                "id": 5,
+                "descr": "Maximun reached during regulation"
+            },
+            {
+                "id": 6,
+                "descr": "Minimum reached during regulation"
+            },
+            {
+                "id": 7,
+                "descr": "Maximun reached during normal function"
+            },
+            {
+                "id": 8,
+                "descr": "Minimum reached during normal function"
+            },
+            {
+                "id": 9,
+                "descr": "Starting out of range"
+            },
+            {
+                "id": 10,
+                "descr": "Temperature maximum reached"
+            }
+        ],
+        "url": "https://plus.google.com/photos/101484722727144067052/albums/5935595517212056161?banner=pwa",
+        "templateUrl": "/amp/templates/122.html",
+        "controllerUrl": "/amp/controllers/122.js",
+        "controller": "controller122"
+    },
+    {
+        "name": "QQE03-12TPP-L",
+        "id": 6,
+        "description": "Triple push-pull amplifier with six QQE03-12 per channels. Left channel.",
+        "damping factor": 4.1,
+        "power": "35W",
+        "bandwidth": "5HZ-75KHZ (-3db)",
+        "amplification factor": 2.3,
+        "inverter": false,
+        "tubes": [
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            }
+        ],
+        "errors": [
+            {
+                "id": 2,
+                "descr": "Discharge too long"
+            },
+            {
+                "id": 3,
+                "descr": "Current during heat time"
+            },
+            {
+                "id": 4,
+                "descr": "Out of range during starting"
+            },
+            {
+                "id": 5,
+                "descr": "Stabilization too long"
+            },
+            {
+                "id": 6,
+                "descr": "Maximun reached during regulation"
+            },
+            {
+                "id": 7,
+                "descr": "Minimum reached during regulation"
+            },
+            {
+                "id": 8,
+                "descr": "Maximun reached during normal function"
+            },
+            {
+                "id": 9,
+                "descr": "Minimum reached during normal function"
+            },
+            {
+                "id": 10,
+                "descr": "Time elapsed with current out of range during normal function"
+            },
+            {
+                "id": 11,
+                "descr": "Starting too long"
+            },
+            {
+                "id": 12,
+                "descr": "Temperature maximum reached"
+            },
+            {
+                "id": 14,
+                "descr": "Phase"
+            }
+        ],
+        "url": "https://plus.google.com/photos/101484722727144067052/albums/5935596980638777601?banner=pwa",
+        "templateUrl": "/amp/templates/006.html",
+        "controllerUrl": "/amp/controllers/006.js",
+        "controller": "controller006"
+    },
+    {
+        "name": "QQE03-12TPP-R",
+        "id": 7,
+        "description": "Triple push-pull amplifier with six QQE03-12 per channels. Right channel.",
+        "damping factor": 4.1,
+        "power": "35W",
+        "bandwidth": "5HZ-75KHZ (-3db)",
+        "amplification factor": 2.3,
+        "inverter": false,
+        "tubes": [
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            }
+        ],
+        "errors": [
+            {
+                "id": 2,
+                "descr": "Discharge too long"
+            },
+            {
+                "id": 3,
+                "descr": "Current during heat time"
+            },
+            {
+                "id": 4,
+                "descr": "Out of range during starting"
+            },
+            {
+                "id": 5,
+                "descr": "Stabilization too long"
+            },
+            {
+                "id": 6,
+                "descr": "Maximun reached during regulation"
+            },
+            {
+                "id": 7,
+                "descr": "Minimum reached during regulation"
+            },
+            {
+                "id": 8,
+                "descr": "Maximun reached during normal function"
+            },
+            {
+                "id": 9,
+                "descr": "Minimum reached during normal function"
+            },
+            {
+                "id": 10,
+                "descr": "Time elapsed with current out of range during normal function"
+            },
+            {
+                "id": 11,
+                "descr": "Starting too long"
+            },
+            {
+                "id": 12,
+                "descr": "Temperature maximum reached"
+            },
+            {
+                "id": 14,
+                "descr": "Phase"
+            }
+        ],
+        "url": "https://plus.google.com/photos/101484722727144067052/albums/5935596980638777601?banner=pwa",
+        "templateUrl": "/amp/templates/007.html",
+        "controllerUrl": "/amp/controllers/007.js",
+        "controller": "controller007"
+    },
+    {
+        "name": "QQE04-20PP-L",
+        "id": 32,
+        "description": "Push-pull amplifier with two QQE04-20 per channels. Left Channel.",
+        "damping factor": 1.26,
+        "power": "15W",
+        "bandwidth": "unknown",
+        "amplification factor": 5.4,
+        "inverter": false,
+        "tubes": [
+            {
+                "name": "Left: QQE04-20"
+            },
+            {
+                "name": "Right: QQE04-20"
+            }
+        ],
+        "errors": [
+            {
+                "id": 2,
+                "descr": "Discharge too long"
+            },
+            {
+                "id": 3,
+                "descr": "Current during heat time"
+            },
+            {
+                "id": 4,
+                "descr": "Out of range during starting"
+            },
+            {
+                "id": 5,
+                "descr": "Stabilization too long"
+            },
+            {
+                "id": 6,
+                "descr": "maximun reached during regulation"
+            },
+            {
+                "id": 7,
+                "descr": "minimum reached during regulation"
+            },
+            {
+                "id": 8,
+                "descr": "maximun reached during normal function"
+            },
+            {
+                "id": 9,
+                "descr": "minimum reached during normal function"
+            },
+            {
+                "id": 10,
+                "descr": "Starting too long"
+            }
+        ],
+        "url": "https://plus.google.com/photos/101484722727144067052/albums/5981091500376911393?banner=pwa",
+        "templateUrl": "/amp/templates/032.html",
+        "controllerUrl": "/amp/controllers/032.js",
+        "controller": "controller032"
+    },
+    {
+        "name": "QQE04-20PP-R",
+        "id": 33,
+        "description": "Push-pull amplifier with two QQE04-20 per channels. Right Channel.",
+        "damping factor": 1.26,
+        "power": "15W",
+        "bandwidth": "unknown",
+        "amplification factor": 5.4,
+        "inverter": false,
+        "tubes": [
+            {
+                "name": "Left: QQE04-20"
+            },
+            {
+                "name": "Right: QQE04-20"
+            }
+        ],
+        "errors": [
+            {
+                "id": 2,
+                "descr": "Discharge too long"
+            },
+            {
+                "id": 3,
+                "descr": "Current during heat time"
+            },
+            {
+                "id": 4,
+                "descr": "Out of range during starting"
+            },
+            {
+                "id": 5,
+                "descr": "Stabilization too long"
+            },
+            {
+                "id": 6,
+                "descr": "maximun reached during regulation"
+            },
+            {
+                "id": 7,
+                "descr": "minimum reached during regulation"
+            },
+            {
+                "id": 8,
+                "descr": "maximun reached during normal function"
+            },
+            {
+                "id": 9,
+                "descr": "minimum reached during normal function"
+            },
+            {
+                "id": 10,
+                "descr": "Starting too long"
+            }
+        ],
+        "url": "https://plus.google.com/photos/101484722727144067052/albums/5981091500376911393?banner=pwa",
+        "templateUrl": "/amp/templates/033.html",
+        "controllerUrl": "/amp/controllers/033.js",
+        "controller": "controller033"
+    },
+    {
+        "name": "QQE03-12DPP",
+        "id": 128,
+        "description": "Double push-pull amplifier with four QQE03-12 per channels.",
+        "damping factor": 3,
+        "power": "25W",
+        "bandwidth": "5HZ-75KHZ (-3db)",
+        "amplification factor": 2.8,
+        "inverter": false,
+        "tubes": [
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            },
+            {
+                "name": "QQE03-12"
+            }
+        ],
+        "errors": [
+            {
+                "id": 2,
+                "descr": "Discharge too long"
+            },
+            {
+                "id": 3,
+                "descr": "Current during heat time"
+            },
+            {
+                "id": 4,
+                "descr": "Out of range during starting"
+            },
+            {
+                "id": 5,
+                "descr": "Stabilization too long"
+            },
+            {
+                "id": 6,
+                "descr": "Maximun reached during regulation"
+            },
+            {
+                "id": 7,
+                "descr": "Minimum reached during regulation"
+            },
+            {
+                "id": 8,
+                "descr": "Maximun reached during normal function"
+            },
+            {
+                "id": 9,
+                "descr": "Minimum reached during normal function"
+            },
+            {
+                "id": 10,
+                "descr": "Time elapsed with current out of range during normal function"
+            },
+            {
+                "id": 11,
+                "descr": "Starting too long"
+            },
+            {
+                "id": 12,
+                "descr": "Temperature maximum reached"
+            }
+        ],
+        "url": "https://plus.google.com/photos/101484722727144067052/albums/5935596980638777601?banner=pwa",
+        "templateUrl": "/amp/templates/128.html",
+        "controllerUrl": "/amp/controllers/128.js",
+        "controller": "controller128"
+    },
+    {
+        "name": "807SE",
+        "id": 207,
+        "description": "Single ended amplifier with one 807 per channels.",
+        "damping factor": 2.4,
+        "power": "8W",
+        "bandwidth": "17HZ-65KHZ (-3db)",
+        "amplification factor": 13,
+        "inverter": true,
+        "tubes": [
+            {
+                "name": "807"
+            },
+            {
+                "name": "6SJ7"
+            }
+        ],
+        "errors": [
+            {
+                "id": 2,
+                "descr": "Discharge too long"
+            },
+            {
+                "id": 3,
+                "descr": "Current during heating time"
+            },
+            {
+                "id": 4,
+                "descr": "Stabilization too long"
+            },
+            {
+                "id": 5,
+                "descr": "Out of range during normal function"
+            }
+        ],
+        "url": "https://plus.google.com/photos/101484722727144067052/albums/5935594425575460337?banner=pwa",
+        "templateUrl": "/amp/templates/207.html",
+        "controllerUrl": "/amp/controllers/207.js",
+        "controller": "controller207"
+    },
+    {
+        "name": "12E1",
+        "id": 212,
+        "description": "Push-pull amplifier with two 12E1 per channels.",
+        "damping factor": 3.7,
+        "power": "25W",
+        "bandwidth": "10HZ-100KHZ (-3db)",
+        "amplification factor": 10,
+        "inverter": false,
+        "tubes": [
+            {
+                "name": "12E1"
+            },
+            {
+                "name": "12E1"
+            },
+            {
+                "name": "6SN7"
+            },
+            {
+                "name": "6SN7"
+            }
+        ],
+        "errors": [
+            {
+                "id": 2,
+                "descr": "Discharge too long"
+            },
+            {
+                "id": 3,
+                "descr": "Current during heat time"
+            },
+            {
+                "id": 4,
+                "descr": "Out of range during starting"
+            },
+            {
+                "id": 5,
+                "descr": "Regulation too long"
+            },
+            {
+                "id": 6,
+                "descr": "Maximun reached during regulation"
+            },
+            {
+                "id": 7,
+                "descr": "Minimum reached during regulation"
+            },
+            {
+                "id": 8,
+                "descr": "Maximun reached during normal function"
+            },
+            {
+                "id": 9,
+                "descr": "Minimum reached during normal function"
+            },
+            {
+                "id": 10,
+                "descr": "Time elapsed with current out of range during normal function"
+
+            },
+            {
+                "id": 11,
+                "descr": "Starting too long"
+            },
+            {
+                "id": 12,
+                "descr": "Temperature maximum reached"
+            },
+            {
+                "id": 13,
+                "descr": "Screen current too high"
+            },
+            {
+                "id": 14,
+                "descr": "Phase detction"
+            }
+        ],
+        "url": "https://plus.google.com/photos/101484722727144067052/albums/5264186301684564849?banner=pwa",
+        "templateUrl": "/amp/templates/212.html",
+        "controllerUrl": "/amp/controllers/212.js",
+        "controller": "controller212"
+    },
+    {
+        "name": "807SRPPL",
+        "id": 208,
+        "description": "SRPP amplifier with two 807 per channels. Left channel.",
+        "damping factor": 1.4,
+        "power": "25W",
+        "bandwidth": "4HZ-220KHZ (-3db)",
+        "amplification factor": 10,
+        "inverter": false,
+        "tubes": [
+            {
+                "name": "807"
+            },
+            {
+                "name": "807"
+            },
+            {
+                "name": "807"
+            },
+            {
+                "name": "807"
+            },
+            {
+                "name": "6CM7"
+            },
+            {
+                "name": "6E5P"
+            }
+        ],
+        "errors": [
+            {
+                "id": 2,
+                "descr": "Screen current"
+            },
+            {
+                "id": 3,
+                "descr": "Stabilization too long"
+            },
+            {
+                "id": 4,
+                "descr": "Out of range"
+            },
+            {
+                "id": 5,
+                "descr": "Air inside amplifier temperature too high"
+            },
+            {
+                "id": 6,
+                "descr": "Shunt regulator temperature too high"
+            },
+            {
+                "id": 7,
+                "descr": "Driver regulator temperature too high"
+            },
+            {
+                "id": 8,
+                "descr": "Internal transformer temperature too high"
+            }
+        ],
+        "url": "https://plus.google.com/photos/101484722727144067052/albums/5954976616939055217?banner=pwa",
+        "templateUrl": "/amp/templates/208.html",
+        "controllerUrl": "/amp/controllers/208.js",
+        "controller": "controller208"
+    },
+    {
+        "name": "807SRPPR",
+        "id": 209,
+        "description": "SRPP amplifier with two 807 per channels. Right channel.",
+        "damping factor": 1.4,
+        "power": "25W",
+        "bandwidth": "4HZ-220KHZ (-3db)",
+        "amplification factor": 10,
+        "inverter": false,
+        "tubes": [
+            {
+                "name": "807"
+            },
+            {
+                "name": "807"
+            },
+            {
+                "name": "807"
+            },
+            {
+                "name": "807"
+            },
+            {
+                "name": "6CM7"
+            },
+            {
+                "name": "6E5P"
+            }
+        ],
+        "errors": [
+            {
+                "id": 2,
+                "descr": "Screen current"
+            },
+            {
+                "id": 3,
+                "descr": "Stabilization too long"
+            },
+            {
+                "id": 4,
+                "descr": "Out of range"
+            },
+            {
+                "id": 5,
+                "descr": "Air inside amplifier temperature too high"
+            },
+            {
+                "id": 6,
+                "descr": "Shunt regulator temperature too high"
+            },
+            {
+                "id": 7,
+                "descr": "Driver regulator temperature too high"
+            },
+            {
+                "id": 8,
+                "descr": "Internal transformer temperature too high"
+            }
+        ],
+        "url": "https://plus.google.com/photos/101484722727144067052/albums/5954976616939055217?banner=pwa",
+        "templateUrl": "/amp/templates/209.html",
+        "controllerUrl": "/amp/controllers/209.js",
+        "controller": "controller209"
+    },
+    {
+        "name": "GI30",
+        "id": 30,
+        "description": "Push-pull amplifier with two GI30 per channels.",
+        "damping factor": 5,
+        "power": "30W",
+        "bandwidth": "??",
+        "amplification factor": 2.7,
+        "inverter": false,
+        "tubes": [
+            {
+                "name": "GI30"
+            },
+            {
+                "name": "GI30"
+            },
+            {
+                "name": "GI30"
+            },
+            {
+                "name": "GI30"
+            }
+        ],
+        "errors": [
+            {
+                "id": 2,
+                "descr": "Discharge too long"
+            },
+            {
+                "id": 3,
+                "descr": "Current during heating time"
+            },
+            {
+                "id": 4,
+                "descr": "Regulation too long"
+            },
+            {
+                "id": 5,
+                "descr": "Maximun reached during regulation"
+            },
+            {
+                "id": 6,
+                "descr": "Minimum reached during regulation"
+            },
+            {
+                "id": 7,
+                "descr": "Maximun reached during normal function"
+            },
+            {
+                "id": 8,
+                "descr": "Minimum reached during normal function"
+            },
+            {
+                "id": 9,
+                "descr": "Time elapsed with current out of range during normal function"
+            },
+            {
+                "id": 10,
+                "descr": "Starting too long"
+            },
+            {
+                "id": 11,
+                "descr": "Out of range during starting"
+            },
+            {
+                "id": 12,
+                "descr": "Temperature maximum reached"
+            },
+            {
+                "id": 13,
+                "descr": "Phase detection"
+            }
+        ],
+        "url": "https://plus.google.com/photos/101484722727144067052/albums/5998993890371610817?banner=pwa",
+        "templateUrl": "/amp/templates/030.html",
+        "controllerUrl": "/amp/controllers/030.js",
+        "controller": "controller030"
+    },
+    {
+        "name": "GU19PP",
+        "id": 19,
+        "description": "Push-pull amplifier with two GU19 per channels.",
+        "damping factor": 0,
+        "power": "25W",
+        "bandwidth": "5HZ-75KHZ (-3db)",
+        "amplification factor": 0,
+        "inverter": false,
+        "tubes": [
+            {
+                "name": "6E6P-E"
+            },
+            {
+                "name": "6E6P-E"
+            },
+            {
+                "name": "6E6P-E"
+            },
+            {
+                "name": "6E6P-E"
+            },
+            {
+                "name": "GU19-1"
+            },
+            {
+                "name": "GU19-1"
+            },
+            {
+                "name": "GU19-1"
+            },
+            {
+                "name": "GU19-1"
+            }
+        ],
+        "errors": [
+            {
+                "id": 2,
+                "descr": "Discharge too long"
+            },
+            {
+                "id": 3,
+                "descr": "Current during heat time"
+            },
+            {
+                "id": 4,
+                "descr": "Out of range during starting"
+            },
+            {
+                "id": 5,
+                "descr": "Regulation too long"
+            },
+            {
+                "id": 6,
+                "descr": "Maximun reached during regulation"
+            },
+            {
+                "id": 7,
+                "descr": "Minimum reached during regulation"
+            },
+            {
+                "id": 8,
+                "descr": "Maximun reached during normal function"
+            },
+            {
+                "id": 9,
+                "descr": "Minimum reached during normal function"
+            },
+            {
+                "id": 10,
+                "descr": "Time elapsed with current out of range during normal function"
+            },
+            {
+                "id": 11,
+                "descr": "Starting too long"
+            },
+            {
+                "id": 12,
+                "descr": "Temperature maximum reached"
+            }
+        ],
+        "url": "",
+        "templateUrl": "/amp/templates/019.html",
+        "controllerUrl": "/amp/controllers/019.js",
+        "controller": "controller019"
+    }
+]

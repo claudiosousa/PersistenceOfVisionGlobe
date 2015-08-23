@@ -1,0 +1,86 @@
+@ampActiveColor: green;
+@ampSelectedColor: lightgreen;
+
+@inactiveBorder: 1px solid rgba(255, 255, 255, 0.5);
+@activeBackground: rgba(0, 0, 0, 0.5);
+@inactiveBackground: rgba(0, 0, 0, 0.2);
+
+@inactiveBackgroundColor: rgba(255,255,255,0.08);
+@hoverWhite: @inactiveBorderColor;
+@activeWhite: rgba(255,255,255,0.4);
+
+@inactiveBorderColor: rgba(255,255,255,0.2);
+@activeBorderColor: rgba(255, 255, 255, 0.5);
+
+/* Base colors */
+@activeBackgroundColor: rgba(255,255,255,.2);
+@disabledBackgroundColor : rgba(255,255,255,.1);
+@foreColor: rgba(255,255,255,.8);
+@inactiveForeColor : rgba(255,255,255,.6);
+@disabledForeColor : rgba(255,255,255,.4);
+
+/* Context elements */
+@overBackgroundColor: rgba(255,255,255,.9);
+@overForeColor: rgba(0,0,0,.5);
+@overInactiveForeColor: rgba(0,0,0,.2);
+@overHoverForeColor: rgba(0,0,0,1);
+@overSelectedBackgroundColor: rgba(0,0,0,.1);
+@overSelectedForeColor: rgba(0,0,0,.8);
+@overSelectedHoverForeColor: rgba(255,255,255,1);
+@overActiveBackgroundColor: rgba(0,0,0,.5);
+@activeForeColor: rgba(255,255,255,1);
+
+@focusBorderColor: rgba(255, 255, 255, 0.7);
+
+@light: camingodos_prolight;
+
+/* Parametric mixins to abstract specific vendor prefixes */
+.transition(@transition: all linear .2s) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  transition: @transition;
+}
+
+.transitionTransform(@params: linear .2s){
+  -webkit-transition: -webkit-transform @params;
+  -moz-transition: -moz-transition @params;
+  transition: transform @params;
+}
+
+.transform(@value; @rest...){
+  -webkit-transform: @arguments;
+  -moz-transform: @arguments;
+  -o-transform: @arguments;
+  transform: @arguments;
+}
+
+.transform-origin(@X, @Y, @Z: 0){
+  -webkit-transform-origin: @arguments;
+  -moz-transform-origin: @arguments;
+  -o-transform-origin: @arguments;
+  transform-origin: @arguments;
+}
+
+.animation(@name; @duration; @rest...){
+  -webkit-animation: @arguments;
+  -moz-animation: @arguments;
+  -o-animation: @arguments;
+  animation: @arguments;
+}
+
+.box-sizing(@value; @rest...)
+{
+  -webkit-box-sizing: @arguments;
+  -moz-box-sizing: @arguments;
+  -o-sizing: @arguments;
+  box-sizing: @arguments;
+}
+
+.inline
+{
+  display: inline-block;
+}
+
+/* Imports */
+@import 'animation.less';
+@import 'pov.less';

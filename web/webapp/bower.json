@@ -1,0 +1,31 @@
+{
+  "name": "Diagnostic",
+  "version": "0.1.0",
+  "homepage": "http://vapkse,dynamic-dns.net",
+  "authors": [
+    "Serge Botoela, vapkse"
+  ],
+  "description": "Diagnostic is a project to control temprature and currents of a tube amplifier.",
+  "main": "index.html",
+  "ignore": [
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "1.2",
+    "angular-dateparser": "1.0",
+    "angular-route": "1.2",
+    "angular-resource": "1.2",
+    "angular-animate": "1.2",
+    "angular-translate": "2.2",
+    "jquery": "2.1",
+    "jqueryui": "1.10",
+    "numeral": "latest",
+    "page-transitions": "latest",
+    "uikit": "2.6",
+    "requirejs": "2.1",
+    "moment": "~2.7.0"
+  },
+  "resolutions": {
+    "jquery": "2.1"
+  }
+}

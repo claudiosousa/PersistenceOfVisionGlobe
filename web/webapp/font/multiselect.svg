@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2014 by original authors @ fontello.com</metadata>
+<defs>
+<font id="multiselect" horiz-adv-x="1000" >
+<font-face font-family="multiselect" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="down-open" unicode="&#xe800;" d="m899 457q0-29-21-50l-363-363q-21-22-51-22-30 0-50 22l-363 363q-21 20-21 50 0 30 21 51l41 42q22 20 51 20 29 0 50-20l271-271 271 271q21 20 51 20 29 0 50-20l42-42q21-22 21-51z" horiz-adv-x="928.6" />
+<glyph glyph-name="calendar-1" unicode="&#xe801;" d="m0-31v761q0 37 26 62t62 26h762q36 0 61-26t26-62v-761q0-36-26-62t-61-26h-762q-36 0-62 26t-26 62z m88 0h762v527h-762v-527z m60 59v175h176v-175h-176z m0 234v176h176v-176h-176z m235-234v175h175v-175h-175z m0 234v176h175v-176h-175z m234-234v175h176v-175h-176z m0 234v176h176v-176h-176z" horiz-adv-x="937.5" />
+</font>
+</defs>
+</svg>

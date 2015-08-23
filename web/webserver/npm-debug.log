@@ -1,0 +1,931 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'serialport2' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of Z:\Serge\My Documents\Electronique\POV\web\webserver\package.json
+5 verbose installManyTop reading scoped package data from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\ejs\package.json
+6 verbose installManyTop reading scoped package data from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\express\package.json
+7 verbose installManyTop reading scoped package data from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\less-middleware\package.json
+8 verbose installManyTop reading scoped package data from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\log4js\package.json
+9 verbose installManyTop reading scoped package data from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport\package.json
+10 verbose installManyTop reading scoped package data from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\socket.io\package.json
+11 verbose installManyTop reading scoped package data from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\struct\package.json
+12 verbose installManyTop reading scoped package data from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\stylus\package.json
+13 verbose installManyTop reading scoped package data from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\underscore\package.json
+14 info package.json ejs@1.0.0 No license field.
+15 info package.json less-middleware@1.0.3 No license field.
+16 info package.json serialport@1.7.4 No license field.
+17 info package.json struct@0.0.6 'repositories' (plural) Not supported. Please pick one as the 'repository' field
+18 info package.json struct@0.0.6 No license field.
+19 info package.json stylus@0.46.2 No license field.
+20 info package.json socket.io@1.3.6 No license field.
+21 verbose readDependencies loading dependencies from Z:\Serge\My Documents\Electronique\POV\web\webserver\package.json
+22 silly cache add args [ 'serialport2', null ]
+23 verbose cache add spec serialport2
+24 silly cache add parsed spec { raw: 'serialport2',
+24 silly cache add   scope: null,
+24 silly cache add   name: 'serialport2',
+24 silly cache add   rawSpec: '',
+24 silly cache add   spec: '*',
+24 silly cache add   type: 'range' }
+25 silly addNamed serialport2@*
+26 verbose addNamed "*" is a valid semver range for serialport2
+27 silly addNameRange { name: 'serialport2', range: '*', hasData: false }
+28 silly mapToRegistry name serialport2
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry uri https://registry.npmjs.org/serialport2
+32 verbose addNameRange registry:https://registry.npmjs.org/serialport2 not in flight; fetching
+33 verbose request uri https://registry.npmjs.org/serialport2
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 15:53:53
+36 verbose request id d8907d4dd994582a
+37 verbose etag "1QTVWBAEXZPKU8B7IXQUDHKUP"
+38 http request GET https://registry.npmjs.org/serialport2
+39 http 304 https://registry.npmjs.org/serialport2
+40 silly get cb [ 304,
+40 silly get   { date: 'Sun, 23 Aug 2015 13:54:06 GMT',
+40 silly get     via: '1.1 varnish',
+40 silly get     'cache-control': 'max-age=60',
+40 silly get     etag: '"1QTVWBAEXZPKU8B7IXQUDHKUP"',
+40 silly get     age: '0',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-served-by': 'cache-fra1224-FRA',
+40 silly get     'x-cache': 'MISS',
+40 silly get     'x-cache-hits': '0',
+40 silly get     'x-timer': 'S1440338046.213975,VS0,VE103',
+40 silly get     vary: 'Accept' } ]
+41 verbose etag https://registry.npmjs.org/serialport2 from cache
+42 verbose get saving serialport2 to C:\Users\Serge\AppData\Roaming\npm-cache\registry.npmjs.org\serialport2\.cache.json
+43 silly addNameRange number 2 { name: 'serialport2', range: '*', hasData: true }
+44 silly addNameRange versions [ 'serialport2',
+44 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.0.5' ] ]
+45 silly addNamed serialport2@0.0.5
+46 verbose addNamed "0.0.5" is a plain semver version for serialport2
+47 warn deprecated serialport2@0.0.5: Development has moved to serialport
+48 silly cache afterAdd serialport2@0.0.5
+49 verbose afterAdd C:\Users\Serge\AppData\Roaming\npm-cache\serialport2\0.0.5\package\package.json not in flight; writing
+50 verbose afterAdd C:\Users\Serge\AppData\Roaming\npm-cache\serialport2\0.0.5\package\package.json written
+51 silly install resolved [ { name: 'serialport2',
+51 silly install resolved     description: 'node.js serial port driver.',
+51 silly install resolved     author: { name: 'Joe Ferner', email: 'joe.ferner@nearinfinity.com' },
+51 silly install resolved     keywords: [ 'serial', 'serialport', 'com', 'comport', 'arduino' ],
+51 silly install resolved     version: '0.0.5',
+51 silly install resolved     engines: { node: '>=0.6.0' },
+51 silly install resolved     maintainers: [ [Object] ],
+51 silly install resolved     bugs: { url: 'https://github.com/joeferner/node-serialport2/issues' },
+51 silly install resolved     license: 'MIT',
+51 silly install resolved     repository:
+51 silly install resolved      { type: 'git',
+51 silly install resolved        url: 'git://github.com/joeferner/node-serialport2.git' },
+51 silly install resolved     dependencies:
+51 silly install resolved      { bindings: '0.3.0',
+51 silly install resolved        async: '0.1.18',
+51 silly install resolved        sf: '0.1.3',
+51 silly install resolved        optimist: '~0.3.4' },
+51 silly install resolved     devDependencies: { nodeunit: '~0.7.4' },
+51 silly install resolved     scripts: { test: 'node ./node_modules/nodeunit/bin/nodeunit test' },
+51 silly install resolved     main: './index.js',
+51 silly install resolved     bin:
+51 silly install resolved      { serialportlist: './bin/serialportList.js',
+51 silly install resolved        serialportterm: './bin/serialportTerminal.js' },
+51 silly install resolved     _npmUser: { name: 'joeferner', email: 'joe@fernsroth.com' },
+51 silly install resolved     _id: 'serialport2@0.0.5',
+51 silly install resolved     _engineSupported: true,
+51 silly install resolved     _npmVersion: '1.1.0-alpha-6',
+51 silly install resolved     _nodeVersion: 'v0.7.8',
+51 silly install resolved     _defaultsLoaded: true,
+51 silly install resolved     dist:
+51 silly install resolved      { shasum: 'd74af5ad22e77518c40aa9f5c58586df0d38fe17',
+51 silly install resolved        tarball: 'http://registry.npmjs.org/serialport2/-/serialport2-0.0.5.tgz' },
+51 silly install resolved     deprecated: 'Development has moved to serialport',
+51 silly install resolved     directories: {},
+51 silly install resolved     _shasum: 'd74af5ad22e77518c40aa9f5c58586df0d38fe17',
+51 silly install resolved     _resolved: 'https://registry.npmjs.org/serialport2/-/serialport2-0.0.5.tgz',
+51 silly install resolved     _from: 'serialport2@*',
+51 silly install resolved     readme: 'ERROR: No README data found!',
+51 silly install resolved     homepage: 'https://github.com/joeferner/node-serialport2#readme' } ]
+52 info install serialport2@0.0.5 into Z:\Serge\My Documents\Electronique\POV\web\webserver
+53 info installOne serialport2@0.0.5
+54 verbose installOne of serialport2 to Z:\Serge\My Documents\Electronique\POV\web\webserver not in flight; installing
+55 verbose lock using C:\Users\Serge\AppData\Roaming\npm-cache\_locks\serialport2-7eea86ff02ebdde0.lock for Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+56 silly install write writing serialport2 0.0.5 to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+57 verbose unbuild node_modules\serialport2
+58 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2 is being purged from base Z:\Serge\My Documents\Electronique\POV\web\webserver
+59 verbose gentlyRm don't care about contents; nuking Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+60 verbose tar unpack C:\Users\Serge\AppData\Roaming\npm-cache\serialport2\0.0.5\package.tgz
+61 verbose tar unpacking to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+62 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2 is being purged
+63 verbose gentlyRm don't care about contents; nuking Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+64 silly gunzTarPerm modes [ '777', '666' ]
+65 silly gunzTarPerm extractEntry lib/
+66 silly gunzTarPerm modified mode [ 'lib/', 493, 511 ]
+67 silly gunzTarPerm extractEntry lib/serialport.js
+68 silly gunzTarPerm modified mode [ 'lib/serialport.js', 420, 438 ]
+69 silly gunzTarPerm extractEntry test/
+70 silly gunzTarPerm modified mode [ 'test/', 493, 511 ]
+71 silly gunzTarPerm extractEntry test/arduinioEcho/
+72 silly gunzTarPerm modified mode [ 'test/arduinioEcho/', 493, 511 ]
+73 silly gunzTarPerm extractEntry test/arduinioEcho/arduinioEcho.ino
+74 silly gunzTarPerm modified mode [ 'test/arduinioEcho/arduinioEcho.ino', 420, 438 ]
+75 silly gunzTarPerm extractEntry test/echoTest.js
+76 silly gunzTarPerm modified mode [ 'test/echoTest.js', 420, 438 ]
+77 silly gunzTarPerm extractEntry .idea/
+78 silly gunzTarPerm modified mode [ '.idea/', 493, 511 ]
+79 silly gunzTarPerm extractEntry .idea/node-serialport2.iml
+80 silly gunzTarPerm modified mode [ '.idea/node-serialport2.iml', 420, 438 ]
+81 silly gunzTarPerm extractEntry .idea/misc.xml
+82 silly gunzTarPerm modified mode [ '.idea/misc.xml', 420, 438 ]
+83 silly gunzTarPerm extractEntry .idea/vcs.xml
+84 silly gunzTarPerm modified mode [ '.idea/vcs.xml', 420, 438 ]
+85 silly gunzTarPerm extractEntry .idea/workspace.xml
+86 silly gunzTarPerm modified mode [ '.idea/workspace.xml', 420, 438 ]
+87 silly gunzTarPerm extractEntry .idea/.name
+88 silly gunzTarPerm modified mode [ '.idea/.name', 420, 438 ]
+89 silly gunzTarPerm extractEntry .idea/modules.xml
+90 silly gunzTarPerm modified mode [ '.idea/modules.xml', 420, 438 ]
+91 silly gunzTarPerm extractEntry .idea/encodings.xml
+92 silly gunzTarPerm modified mode [ '.idea/encodings.xml', 420, 438 ]
+93 silly gunzTarPerm extractEntry .idea/scopes/
+94 silly gunzTarPerm modified mode [ '.idea/scopes/', 493, 511 ]
+95 silly gunzTarPerm extractEntry .idea/scopes/scope_settings.xml
+96 silly gunzTarPerm modified mode [ '.idea/scopes/scope_settings.xml', 420, 438 ]
+97 silly gunzTarPerm extractEntry binding.gyp
+98 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+99 silly gunzTarPerm extractEntry src/
+100 silly gunzTarPerm modified mode [ 'src/', 493, 511 ]
+101 silly gunzTarPerm extractEntry src/serialport.cpp
+102 silly gunzTarPerm modified mode [ 'src/serialport.cpp', 420, 438 ]
+103 silly gunzTarPerm extractEntry src/win/
+104 silly gunzTarPerm modified mode [ 'src/win/', 493, 511 ]
+105 silly gunzTarPerm extractEntry src/win/disphelper.h
+106 silly gunzTarPerm modified mode [ 'src/win/disphelper.h', 420, 438 ]
+107 silly gunzTarPerm extractEntry src/win/disphelper.c
+108 silly gunzTarPerm modified mode [ 'src/win/disphelper.c', 420, 438 ]
+109 silly gunzTarPerm extractEntry src/serialport_unix.cpp
+110 silly gunzTarPerm modified mode [ 'src/serialport_unix.cpp', 420, 438 ]
+111 silly gunzTarPerm extractEntry src/serialport.h
+112 silly gunzTarPerm modified mode [ 'src/serialport.h', 420, 438 ]
+113 silly gunzTarPerm extractEntry src/serialport_win.cpp
+114 silly gunzTarPerm modified mode [ 'src/serialport_win.cpp', 420, 438 ]
+115 silly gunzTarPerm extractEntry .gitignore
+116 silly gunzTarPerm modified mode [ '.gitignore', 420, 438 ]
+117 silly gunzTarPerm extractEntry index.js
+118 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+119 silly gunzTarPerm extractEntry bin/
+120 silly gunzTarPerm modified mode [ 'bin/', 493, 511 ]
+121 silly gunzTarPerm extractEntry bin/serialportList.js
+122 silly gunzTarPerm modified mode [ 'bin/serialportList.js', 493, 511 ]
+123 silly gunzTarPerm extractEntry bin/serialportTerminal.js
+124 silly gunzTarPerm modified mode [ 'bin/serialportTerminal.js', 493, 511 ]
+125 silly gunzTarPerm extractEntry package.json
+126 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+127 silly gunzTarPerm extractEntry README.md
+128 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+129 verbose write writing to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\package.json
+130 info preinstall serialport2@0.0.5
+131 verbose readDependencies loading dependencies from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\package.json
+132 silly prepareForInstallMany adding bindings@0.3.0 from serialport2 dependencies
+133 silly prepareForInstallMany adding async@0.1.18 from serialport2 dependencies
+134 silly prepareForInstallMany adding sf@0.1.3 from serialport2 dependencies
+135 silly prepareForInstallMany adding optimist@~0.3.4 from serialport2 dependencies
+136 verbose readDependencies loading dependencies from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\package.json
+137 silly cache add args [ 'async@0.1.18', null ]
+138 verbose cache add spec async@0.1.18
+139 silly cache add parsed spec { raw: 'async@0.1.18',
+139 silly cache add   scope: null,
+139 silly cache add   name: 'async',
+139 silly cache add   rawSpec: '0.1.18',
+139 silly cache add   spec: '0.1.18',
+139 silly cache add   type: 'version' }
+140 silly addNamed async@0.1.18
+141 verbose addNamed "0.1.18" is a plain semver version for async
+142 silly mapToRegistry name async
+143 silly mapToRegistry using default registry
+144 silly mapToRegistry registry https://registry.npmjs.org/
+145 silly mapToRegistry uri https://registry.npmjs.org/async
+146 verbose addNameVersion registry:https://registry.npmjs.org/async not in flight; fetching
+147 silly cache add args [ 'sf@0.1.3', null ]
+148 verbose cache add spec sf@0.1.3
+149 silly cache add parsed spec { raw: 'sf@0.1.3',
+149 silly cache add   scope: null,
+149 silly cache add   name: 'sf',
+149 silly cache add   rawSpec: '0.1.3',
+149 silly cache add   spec: '0.1.3',
+149 silly cache add   type: 'version' }
+150 silly addNamed sf@0.1.3
+151 verbose addNamed "0.1.3" is a plain semver version for sf
+152 silly mapToRegistry name sf
+153 silly mapToRegistry using default registry
+154 silly mapToRegistry registry https://registry.npmjs.org/
+155 silly mapToRegistry uri https://registry.npmjs.org/sf
+156 verbose addNameVersion registry:https://registry.npmjs.org/sf not in flight; fetching
+157 silly cache add args [ 'optimist@~0.3.4', null ]
+158 verbose cache add spec optimist@~0.3.4
+159 silly cache add parsed spec { raw: 'optimist@~0.3.4',
+159 silly cache add   scope: null,
+159 silly cache add   name: 'optimist',
+159 silly cache add   rawSpec: '~0.3.4',
+159 silly cache add   spec: '>=0.3.4 <0.4.0',
+159 silly cache add   type: 'range' }
+160 silly addNamed optimist@>=0.3.4 <0.4.0
+161 verbose addNamed ">=0.3.4 <0.4.0" is a valid semver range for optimist
+162 silly addNameRange { name: 'optimist', range: '>=0.3.4 <0.4.0', hasData: false }
+163 silly mapToRegistry name optimist
+164 silly mapToRegistry using default registry
+165 silly mapToRegistry registry https://registry.npmjs.org/
+166 silly mapToRegistry uri https://registry.npmjs.org/optimist
+167 verbose addNameRange registry:https://registry.npmjs.org/optimist not in flight; fetching
+168 silly cache add args [ 'bindings@0.3.0', null ]
+169 verbose cache add spec bindings@0.3.0
+170 silly cache add parsed spec { raw: 'bindings@0.3.0',
+170 silly cache add   scope: null,
+170 silly cache add   name: 'bindings',
+170 silly cache add   rawSpec: '0.3.0',
+170 silly cache add   spec: '0.3.0',
+170 silly cache add   type: 'version' }
+171 silly addNamed bindings@0.3.0
+172 verbose addNamed "0.3.0" is a plain semver version for bindings
+173 silly mapToRegistry name bindings
+174 silly mapToRegistry using default registry
+175 silly mapToRegistry registry https://registry.npmjs.org/
+176 silly mapToRegistry uri https://registry.npmjs.org/bindings
+177 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+178 verbose request uri https://registry.npmjs.org/async
+179 verbose request no auth needed
+180 info attempt registry request try #1 at 15:53:54
+181 verbose etag "66HFABO6P3OJ866JE685C8OU2"
+182 http request GET https://registry.npmjs.org/async
+183 verbose request uri https://registry.npmjs.org/sf
+184 verbose request no auth needed
+185 info attempt registry request try #1 at 15:53:54
+186 verbose etag "18YCYRQVZMFUSUJEQ9LVIUD85"
+187 http request GET https://registry.npmjs.org/sf
+188 verbose request uri https://registry.npmjs.org/optimist
+189 verbose request no auth needed
+190 info attempt registry request try #1 at 15:53:54
+191 verbose etag "1ICX81I8Z3FA3TLWT823ARGXB"
+192 http request GET https://registry.npmjs.org/optimist
+193 verbose request uri https://registry.npmjs.org/bindings
+194 verbose request no auth needed
+195 info attempt registry request try #1 at 15:53:54
+196 verbose etag "BCS5XYG9ISNJFNKEL5FLOI5HX"
+197 http request GET https://registry.npmjs.org/bindings
+198 http 304 https://registry.npmjs.org/optimist
+199 silly get cb [ 304,
+199 silly get   { date: 'Sun, 23 Aug 2015 13:54:06 GMT',
+199 silly get     via: '1.1 varnish',
+199 silly get     'cache-control': 'max-age=60',
+199 silly get     etag: '"1ICX81I8Z3FA3TLWT823ARGXB"',
+199 silly get     age: '2',
+199 silly get     connection: 'keep-alive',
+199 silly get     'x-served-by': 'cache-fra1226-FRA',
+199 silly get     'x-cache': 'HIT',
+199 silly get     'x-cache-hits': '1',
+199 silly get     'x-timer': 'S1440338046.796061,VS0,VE0',
+199 silly get     vary: 'Accept' } ]
+200 verbose etag https://registry.npmjs.org/optimist from cache
+201 verbose get saving optimist to C:\Users\Serge\AppData\Roaming\npm-cache\registry.npmjs.org\optimist\.cache.json
+202 http 304 https://registry.npmjs.org/async
+203 silly get cb [ 304,
+203 silly get   { date: 'Sun, 23 Aug 2015 13:54:06 GMT',
+203 silly get     via: '1.1 varnish',
+203 silly get     'cache-control': 'max-age=60',
+203 silly get     etag: '"66HFABO6P3OJ866JE685C8OU2"',
+203 silly get     age: '38',
+203 silly get     connection: 'keep-alive',
+203 silly get     'x-served-by': 'cache-fra1221-FRA',
+203 silly get     'x-cache': 'HIT',
+203 silly get     'x-cache-hits': '1',
+203 silly get     'x-timer': 'S1440338046.793553,VS0,VE4',
+203 silly get     vary: 'Accept' } ]
+204 verbose etag https://registry.npmjs.org/async from cache
+205 verbose get saving async to C:\Users\Serge\AppData\Roaming\npm-cache\registry.npmjs.org\async\.cache.json
+206 http 304 https://registry.npmjs.org/bindings
+207 silly get cb [ 304,
+207 silly get   { date: 'Sun, 23 Aug 2015 13:54:06 GMT',
+207 silly get     via: '1.1 varnish',
+207 silly get     'cache-control': 'max-age=60',
+207 silly get     etag: '"BCS5XYG9ISNJFNKEL5FLOI5HX"',
+207 silly get     age: '54',
+207 silly get     connection: 'keep-alive',
+207 silly get     'x-served-by': 'cache-fra1231-FRA',
+207 silly get     'x-cache': 'HIT',
+207 silly get     'x-cache-hits': '1',
+207 silly get     'x-timer': 'S1440338046.797891,VS0,VE0',
+207 silly get     vary: 'Accept' } ]
+208 verbose etag https://registry.npmjs.org/bindings from cache
+209 verbose get saving bindings to C:\Users\Serge\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
+210 http 304 https://registry.npmjs.org/sf
+211 silly get cb [ 304,
+211 silly get   { date: 'Sun, 23 Aug 2015 13:54:06 GMT',
+211 silly get     via: '1.1 varnish',
+211 silly get     'cache-control': 'max-age=60',
+211 silly get     etag: '"18YCYRQVZMFUSUJEQ9LVIUD85"',
+211 silly get     age: '27',
+211 silly get     connection: 'keep-alive',
+211 silly get     'x-served-by': 'cache-fra1237-FRA',
+211 silly get     'x-cache': 'HIT',
+211 silly get     'x-cache-hits': '1',
+211 silly get     'x-timer': 'S1440338046.808776,VS0,VE0',
+211 silly get     vary: 'Accept' } ]
+212 verbose etag https://registry.npmjs.org/sf from cache
+213 verbose get saving sf to C:\Users\Serge\AppData\Roaming\npm-cache\registry.npmjs.org\sf\.cache.json
+214 silly cache afterAdd bindings@0.3.0
+215 verbose afterAdd C:\Users\Serge\AppData\Roaming\npm-cache\bindings\0.3.0\package\package.json not in flight; writing
+216 silly cache afterAdd sf@0.1.3
+217 verbose afterAdd C:\Users\Serge\AppData\Roaming\npm-cache\sf\0.1.3\package\package.json not in flight; writing
+218 silly addNameRange number 2 { name: 'optimist', range: '>=0.3.4 <0.4.0', hasData: true }
+219 silly addNameRange versions [ 'optimist',
+219 silly addNameRange   [ '0.0.1',
+219 silly addNameRange     '0.0.2',
+219 silly addNameRange     '0.0.4',
+219 silly addNameRange     '0.0.5',
+219 silly addNameRange     '0.0.6',
+219 silly addNameRange     '0.0.7',
+219 silly addNameRange     '0.1.0',
+219 silly addNameRange     '0.1.1',
+219 silly addNameRange     '0.1.2',
+219 silly addNameRange     '0.1.3',
+219 silly addNameRange     '0.1.4',
+219 silly addNameRange     '0.1.5',
+219 silly addNameRange     '0.1.6',
+219 silly addNameRange     '0.1.7',
+219 silly addNameRange     '0.1.8',
+219 silly addNameRange     '0.1.9',
+219 silly addNameRange     '0.0.3',
+219 silly addNameRange     '0.2.0',
+219 silly addNameRange     '0.2.1',
+219 silly addNameRange     '0.2.2',
+219 silly addNameRange     '0.2.3',
+219 silly addNameRange     '0.2.4',
+219 silly addNameRange     '0.2.5',
+219 silly addNameRange     '0.2.6',
+219 silly addNameRange     '0.2.7',
+219 silly addNameRange     '0.2.8',
+219 silly addNameRange     '0.3.0',
+219 silly addNameRange     '0.3.1',
+219 silly addNameRange     '0.3.3',
+219 silly addNameRange     '0.3.4',
+219 silly addNameRange     '0.3.5',
+219 silly addNameRange     '0.3.6',
+219 silly addNameRange     '0.3.7',
+219 silly addNameRange     '0.4.0',
+219 silly addNameRange     '0.5.0',
+219 silly addNameRange     '0.5.1',
+219 silly addNameRange     '0.5.2',
+219 silly addNameRange     '0.6.0',
+219 silly addNameRange     '0.6.1' ] ]
+220 silly addNamed optimist@0.3.7
+221 verbose addNamed "0.3.7" is a plain semver version for optimist
+222 silly cache afterAdd optimist@0.3.7
+223 verbose afterAdd C:\Users\Serge\AppData\Roaming\npm-cache\optimist\0.3.7\package\package.json not in flight; writing
+224 silly cache afterAdd async@0.1.18
+225 verbose afterAdd C:\Users\Serge\AppData\Roaming\npm-cache\async\0.1.18\package\package.json not in flight; writing
+226 verbose afterAdd C:\Users\Serge\AppData\Roaming\npm-cache\async\0.1.18\package\package.json written
+227 verbose afterAdd C:\Users\Serge\AppData\Roaming\npm-cache\bindings\0.3.0\package\package.json written
+228 verbose afterAdd C:\Users\Serge\AppData\Roaming\npm-cache\sf\0.1.3\package\package.json written
+229 verbose afterAdd C:\Users\Serge\AppData\Roaming\npm-cache\optimist\0.3.7\package\package.json written
+230 silly install resolved [ { name: 'async',
+230 silly install resolved     description: 'Higher-order functions and common patterns for asynchronous code',
+230 silly install resolved     main: './index',
+230 silly install resolved     author: { name: 'Caolan McMahon' },
+230 silly install resolved     version: '0.1.18',
+230 silly install resolved     repository: { type: 'git', url: 'git://github.com/caolan/async.git' },
+230 silly install resolved     bugs: { url: 'http://github.com/caolan/async/issues' },
+230 silly install resolved     licenses: [ [Object] ],
+230 silly install resolved     devDependencies: { nodeunit: '>0.0.0', 'uglify-js': '1.2.x', nodelint: '>0.0.0' },
+230 silly install resolved     _npmUser: { name: 'caolan', email: 'caolan@caolanmcmahon.com' },
+230 silly install resolved     _id: 'async@0.1.18',
+230 silly install resolved     dependencies: {},
+230 silly install resolved     optionalDependencies: {},
+230 silly install resolved     engines: { node: '*' },
+230 silly install resolved     _engineSupported: true,
+230 silly install resolved     _npmVersion: '1.1.1',
+230 silly install resolved     _nodeVersion: 'v0.6.11',
+230 silly install resolved     _defaultsLoaded: true,
+230 silly install resolved     dist:
+230 silly install resolved      { shasum: 'c59c923920b76d5bf23248c04433920c4d45086a',
+230 silly install resolved        tarball: 'http://registry.npmjs.org/async/-/async-0.1.18.tgz' },
+230 silly install resolved     maintainers: [ [Object] ],
+230 silly install resolved     directories: {},
+230 silly install resolved     _shasum: 'c59c923920b76d5bf23248c04433920c4d45086a',
+230 silly install resolved     _resolved: 'https://registry.npmjs.org/async/-/async-0.1.18.tgz',
+230 silly install resolved     _from: 'async@0.1.18',
+230 silly install resolved     readme: 'ERROR: No README data found!',
+230 silly install resolved     homepage: 'https://github.com/caolan/async#readme' },
+230 silly install resolved   { name: 'bindings',
+230 silly install resolved     description: 'Helper module for loading your native module\'s bindings in a cross-platform way',
+230 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp' ],
+230 silly install resolved     version: '0.3.0',
+230 silly install resolved     author:
+230 silly install resolved      { name: 'Nathan Rajlich',
+230 silly install resolved        email: 'nathan@tootallnate.net',
+230 silly install resolved        url: 'http://tootallnate.net' },
+230 silly install resolved     repository:
+230 silly install resolved      { type: 'git',
+230 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+230 silly install resolved     main: './bindings.js',
+230 silly install resolved     engines: { node: '*' },
+230 silly install resolved     _npmUser: { name: 'TooTallNate', email: 'nathan@tootallnate.net' },
+230 silly install resolved     _id: 'bindings@0.3.0',
+230 silly install resolved     dependencies: {},
+230 silly install resolved     devDependencies: {},
+230 silly install resolved     optionalDependencies: {},
+230 silly install resolved     _engineSupported: true,
+230 silly install resolved     _npmVersion: '1.1.1',
+230 silly install resolved     _nodeVersion: 'v0.6.11',
+230 silly install resolved     _defaultsLoaded: true,
+230 silly install resolved     dist:
+230 silly install resolved      { shasum: '2d01b7061ca312c6600c9b512404fd3ef99c06f3',
+230 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-0.3.0.tgz' },
+230 silly install resolved     maintainers: [ [Object] ],
+230 silly install resolved     directories: {},
+230 silly install resolved     _shasum: '2d01b7061ca312c6600c9b512404fd3ef99c06f3',
+230 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-0.3.0.tgz',
+230 silly install resolved     _from: 'bindings@0.3.0',
+230 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+230 silly install resolved     readme: 'ERROR: No README data found!',
+230 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings#readme' },
+230 silly install resolved   { name: 'sf',
+230 silly install resolved     description: 'String formatting library for node.js',
+230 silly install resolved     author: { name: 'Joe Ferner', email: 'joe.ferner@nearinfinity.com' },
+230 silly install resolved     keywords: [ 'string', 'format', 'template' ],
+230 silly install resolved     version: '0.1.3',
+230 silly install resolved     engines: { node: '>=0.6.0' },
+230 silly install resolved     maintainers: [ [Object] ],
+230 silly install resolved     bugs: { url: 'https://github.com/nearinfinity/node-sf/issues' },
+230 silly install resolved     license: 'MIT',
+230 silly install resolved     repository:
+230 silly install resolved      { type: 'git',
+230 silly install resolved        url: 'git://github.com/nearinfinity/node-sf.git' },
+230 silly install resolved     devDependencies: { nodeunit: '~0.7.3' },
+230 silly install resolved     scripts: { test: 'nodeunit test' },
+230 silly install resolved     main: './index.js',
+230 silly install resolved     _npmUser: { name: 'joeferner', email: 'joe@fernsroth.com' },
+230 silly install resolved     _id: 'sf@0.1.3',
+230 silly install resolved     dependencies: {},
+230 silly install resolved     optionalDependencies: {},
+230 silly install resolved     _engineSupported: true,
+230 silly install resolved     _npmVersion: '1.1.4',
+230 silly install resolved     _nodeVersion: 'v0.7.7',
+230 silly install resolved     _defaultsLoaded: true,
+230 silly install resolved     dist:
+230 silly install resolved      { shasum: 'a5d246148241ace3788447f6a9a95b564762c354',
+230 silly install resolved        tarball: 'http://registry.npmjs.org/sf/-/sf-0.1.3.tgz' },
+230 silly install resolved     directories: {},
+230 silly install resolved     _shasum: 'a5d246148241ace3788447f6a9a95b564762c354',
+230 silly install resolved     _resolved: 'https://registry.npmjs.org/sf/-/sf-0.1.3.tgz',
+230 silly install resolved     _from: 'sf@0.1.3',
+230 silly install resolved     readme: 'ERROR: No README data found!',
+230 silly install resolved     homepage: 'https://github.com/nearinfinity/node-sf#readme' },
+230 silly install resolved   { name: 'optimist',
+230 silly install resolved     version: '0.3.7',
+230 silly install resolved     description: 'Light-weight option parsing with an argv hash. No optstrings attached.',
+230 silly install resolved     main: './index.js',
+230 silly install resolved     dependencies: { wordwrap: '~0.0.2' },
+230 silly install resolved     devDependencies: { hashish: '~0.0.4', tap: '~0.4.0' },
+230 silly install resolved     scripts: { test: 'tap ./test/*.js' },
+230 silly install resolved     repository:
+230 silly install resolved      { type: 'git',
+230 silly install resolved        url: 'git+ssh://git@github.com/substack/node-optimist.git' },
+230 silly install resolved     keywords:
+230 silly install resolved      [ 'argument',
+230 silly install resolved        'args',
+230 silly install resolved        'option',
+230 silly install resolved        'parser',
+230 silly install resolved        'parsing',
+230 silly install resolved        'cli',
+230 silly install resolved        'command' ],
+230 silly install resolved     author:
+230 silly install resolved      { name: 'James Halliday',
+230 silly install resolved        email: 'mail@substack.net',
+230 silly install resolved        url: 'http://substack.net' },
+230 silly install resolved     license: 'MIT/X11',
+230 silly install resolved     engine: { node: '>=0.4' },
+230 silly install resolved     _id: 'optimist@0.3.7',
+230 silly install resolved     dist:
+230 silly install resolved      { shasum: 'c90941ad59e4273328923074d2cf2e7cbc6ec0d9',
+230 silly install resolved        tarball: 'http://registry.npmjs.org/optimist/-/optimist-0.3.7.tgz' },
+230 silly install resolved     _from: 'optimist@>=0.3.4 <0.4.0',
+230 silly install resolved     _npmVersion: '1.2.2',
+230 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+230 silly install resolved     maintainers: [ [Object] ],
+230 silly install resolved     directories: {},
+230 silly install resolved     _shasum: 'c90941ad59e4273328923074d2cf2e7cbc6ec0d9',
+230 silly install resolved     _resolved: 'https://registry.npmjs.org/optimist/-/optimist-0.3.7.tgz',
+230 silly install resolved     bugs: { url: 'https://github.com/substack/node-optimist/issues' },
+230 silly install resolved     readme: 'ERROR: No README data found!',
+230 silly install resolved     homepage: 'https://github.com/substack/node-optimist#readme' } ]
+231 info install async@0.1.18 into Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+232 info install bindings@0.3.0 into Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+233 info install sf@0.1.3 into Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+234 info install optimist@0.3.7 into Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+235 info installOne async@0.1.18
+236 verbose installOne of async to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2 not in flight; installing
+237 info installOne bindings@0.3.0
+238 verbose installOne of bindings to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2 not in flight; installing
+239 info installOne sf@0.1.3
+240 verbose installOne of sf to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2 not in flight; installing
+241 info installOne optimist@0.3.7
+242 verbose installOne of optimist to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2 not in flight; installing
+243 verbose lock using C:\Users\Serge\AppData\Roaming\npm-cache\_locks\async-4d72624229958df2.lock for Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\async
+244 verbose lock using C:\Users\Serge\AppData\Roaming\npm-cache\_locks\bindings-01b01ecd4a691a24.lock for Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\bindings
+245 silly install write writing async 0.1.18 to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\async
+246 verbose lock using C:\Users\Serge\AppData\Roaming\npm-cache\_locks\sf-0aea7ebc12898bfb.lock for Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\sf
+247 silly install write writing bindings 0.3.0 to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\bindings
+248 verbose lock using C:\Users\Serge\AppData\Roaming\npm-cache\_locks\optimist-124bfe901a62539d.lock for Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist
+249 silly install write writing sf 0.1.3 to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\sf
+250 silly install write writing optimist 0.3.7 to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist
+251 verbose unbuild node_modules\serialport2\node_modules\async
+252 verbose unbuild node_modules\serialport2\node_modules\bindings
+253 verbose unbuild node_modules\serialport2\node_modules\sf
+254 verbose unbuild node_modules\serialport2\node_modules\optimist
+255 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\async is being purged from base Z:\Serge\My Documents\Electronique\POV\web\webserver
+256 verbose gentlyRm don't care about contents; nuking Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\async
+257 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\bindings is being purged from base Z:\Serge\My Documents\Electronique\POV\web\webserver
+258 verbose gentlyRm don't care about contents; nuking Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\bindings
+259 verbose tar unpack C:\Users\Serge\AppData\Roaming\npm-cache\async\0.1.18\package.tgz
+260 verbose tar unpacking to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\async
+261 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\async is being purged
+262 verbose gentlyRm don't care about contents; nuking Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\async
+263 verbose tar unpack C:\Users\Serge\AppData\Roaming\npm-cache\bindings\0.3.0\package.tgz
+264 verbose tar unpacking to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\bindings
+265 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\bindings is being purged
+266 verbose gentlyRm don't care about contents; nuking Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\bindings
+267 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\sf is being purged from base Z:\Serge\My Documents\Electronique\POV\web\webserver
+268 verbose gentlyRm don't care about contents; nuking Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\sf
+269 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist is being purged from base Z:\Serge\My Documents\Electronique\POV\web\webserver
+270 verbose gentlyRm don't care about contents; nuking Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist
+271 silly gunzTarPerm modes [ '777', '666' ]
+272 silly gunzTarPerm modes [ '777', '666' ]
+273 verbose tar unpack C:\Users\Serge\AppData\Roaming\npm-cache\sf\0.1.3\package.tgz
+274 verbose tar unpacking to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\sf
+275 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\sf is being purged
+276 verbose gentlyRm don't care about contents; nuking Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\sf
+277 verbose tar unpack C:\Users\Serge\AppData\Roaming\npm-cache\optimist\0.3.7\package.tgz
+278 verbose tar unpacking to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist
+279 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist is being purged
+280 verbose gentlyRm don't care about contents; nuking Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist
+281 silly gunzTarPerm modes [ '777', '666' ]
+282 silly gunzTarPerm modes [ '777', '666' ]
+283 silly gunzTarPerm extractEntry README.md
+284 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+285 silly gunzTarPerm extractEntry bindings.js
+286 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+287 silly gunzTarPerm extractEntry .npmignore
+288 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+289 silly gunzTarPerm extractEntry package.json
+290 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+291 silly gunzTarPerm extractEntry package.json
+292 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+293 silly gunzTarPerm extractEntry README.md
+294 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+295 silly gunzTarPerm extractEntry README.md
+296 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+297 silly gunzTarPerm extractEntry lib/
+298 silly gunzTarPerm modified mode [ 'lib/', 493, 511 ]
+299 silly gunzTarPerm extractEntry LICENSE
+300 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+301 silly gunzTarPerm extractEntry index.js
+302 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+303 silly gunzTarPerm extractEntry example/line_count_options.js
+304 silly gunzTarPerm modified mode [ 'example/line_count_options.js', 420, 438 ]
+305 silly gunzTarPerm extractEntry lib/stringFormat.js
+306 silly gunzTarPerm modified mode [ 'lib/stringFormat.js', 420, 438 ]
+307 silly gunzTarPerm extractEntry .idea/
+308 silly gunzTarPerm modified mode [ '.idea/', 493, 511 ]
+309 silly gunzTarPerm extractEntry .idea/.name
+310 silly gunzTarPerm modified mode [ '.idea/.name', 420, 438 ]
+311 silly gunzTarPerm extractEntry test/
+312 silly gunzTarPerm modified mode [ 'test/', 493, 511 ]
+313 silly gunzTarPerm extractEntry test/stringFormatTest.js
+314 silly gunzTarPerm modified mode [ 'test/stringFormatTest.js', 420, 438 ]
+315 silly gunzTarPerm extractEntry test/indentTest.js
+316 silly gunzTarPerm modified mode [ 'test/indentTest.js', 420, 438 ]
+317 silly gunzTarPerm extractEntry package.json
+318 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+319 silly gunzTarPerm extractEntry index.js
+320 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+321 silly gunzTarPerm extractEntry index.js
+322 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+323 verbose write writing to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\bindings\package.json
+324 info preinstall bindings@0.3.0
+325 verbose readDependencies loading dependencies from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\bindings\package.json
+326 silly gunzTarPerm extractEntry example/boolean_double.js
+327 silly gunzTarPerm modified mode [ 'example/boolean_double.js', 420, 438 ]
+328 silly gunzTarPerm extractEntry example/divide.js
+329 silly gunzTarPerm modified mode [ 'example/divide.js', 420, 438 ]
+330 verbose readDependencies loading dependencies from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\bindings\package.json
+331 silly install resolved []
+332 verbose about to build Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\bindings
+333 info build Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\bindings
+334 info linkStuff bindings@0.3.0
+335 silly linkStuff bindings@0.3.0 has Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules as its parent node_modules
+336 verbose linkBins bindings@0.3.0
+337 verbose linkMans bindings@0.3.0
+338 verbose rebuildBundles bindings@0.3.0
+339 silly gunzTarPerm extractEntry .npmignore
+340 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+341 silly gunzTarPerm extractEntry Makefile
+342 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+343 info install bindings@0.3.0
+344 info postinstall bindings@0.3.0
+345 verbose unlock done using C:\Users\Serge\AppData\Roaming\npm-cache\_locks\bindings-01b01ecd4a691a24.lock for Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\bindings
+346 silly gunzTarPerm extractEntry package.json
+347 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+348 silly gunzTarPerm extractEntry lib/
+349 silly gunzTarPerm modified mode [ 'lib/', 493, 511 ]
+350 silly gunzTarPerm extractEntry example/nonopt.js
+351 silly gunzTarPerm modified mode [ 'example/nonopt.js', 420, 438 ]
+352 silly gunzTarPerm extractEntry example/string.js
+353 silly gunzTarPerm modified mode [ 'example/string.js', 420, 438 ]
+354 silly gunzTarPerm extractEntry lib/async.js
+355 silly gunzTarPerm modified mode [ 'lib/async.js', 420, 438 ]
+356 silly gunzTarPerm extractEntry LICENSE
+357 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+358 silly gunzTarPerm extractEntry .gitmodules
+359 silly gunzTarPerm modified mode [ '.gitmodules', 420, 438 ]
+360 silly gunzTarPerm extractEntry example/default_hash.js
+361 silly gunzTarPerm modified mode [ 'example/default_hash.js', 420, 438 ]
+362 silly gunzTarPerm extractEntry example/reflect.js
+363 silly gunzTarPerm modified mode [ 'example/reflect.js', 420, 438 ]
+364 silly gunzTarPerm extractEntry example/default_singles.js
+365 silly gunzTarPerm modified mode [ 'example/default_singles.js', 420, 438 ]
+366 silly gunzTarPerm extractEntry example/usage-options.js
+367 silly gunzTarPerm modified mode [ 'example/usage-options.js', 420, 438 ]
+368 silly gunzTarPerm extractEntry example/bool.js
+369 silly gunzTarPerm modified mode [ 'example/bool.js', 420, 438 ]
+370 silly gunzTarPerm extractEntry example/short.js
+371 silly gunzTarPerm modified mode [ 'example/short.js', 420, 438 ]
+372 silly gunzTarPerm extractEntry example/xup.js
+373 silly gunzTarPerm modified mode [ 'example/xup.js', 420, 438 ]
+374 silly gunzTarPerm extractEntry example/boolean_single.js
+375 silly gunzTarPerm modified mode [ 'example/boolean_single.js', 420, 438 ]
+376 silly gunzTarPerm extractEntry example/line_count_wrap.js
+377 silly gunzTarPerm modified mode [ 'example/line_count_wrap.js', 420, 438 ]
+378 silly gunzTarPerm extractEntry example/line_count.js
+379 silly gunzTarPerm modified mode [ 'example/line_count.js', 420, 438 ]
+380 silly gunzTarPerm extractEntry readme.markdown
+381 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+382 silly gunzTarPerm extractEntry test/parse.js
+383 silly gunzTarPerm modified mode [ 'test/parse.js', 420, 438 ]
+384 verbose write writing to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\sf\package.json
+385 silly gunzTarPerm extractEntry test/_.js
+386 silly gunzTarPerm modified mode [ 'test/_.js', 420, 438 ]
+387 silly gunzTarPerm extractEntry test/usage.js
+388 silly gunzTarPerm modified mode [ 'test/usage.js', 420, 438 ]
+389 info preinstall sf@0.1.3
+390 verbose readDependencies loading dependencies from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\sf\package.json
+391 silly gunzTarPerm extractEntry test/_/bin.js
+392 silly gunzTarPerm modified mode [ 'test/_/bin.js', 493, 511 ]
+393 silly gunzTarPerm extractEntry test/_/argv.js
+394 silly gunzTarPerm modified mode [ 'test/_/argv.js', 420, 438 ]
+395 verbose readDependencies loading dependencies from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\sf\package.json
+396 silly gunzTarPerm extractEntry .travis.yml
+397 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+398 silly install resolved []
+399 verbose about to build Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\sf
+400 info build Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\sf
+401 info linkStuff sf@0.1.3
+402 silly linkStuff sf@0.1.3 has Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules as its parent node_modules
+403 verbose write writing to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\async\package.json
+404 info preinstall async@0.1.18
+405 verbose linkBins sf@0.1.3
+406 verbose linkMans sf@0.1.3
+407 verbose rebuildBundles sf@0.1.3
+408 verbose readDependencies loading dependencies from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\async\package.json
+409 info install sf@0.1.3
+410 info postinstall sf@0.1.3
+411 verbose unlock done using C:\Users\Serge\AppData\Roaming\npm-cache\_locks\sf-0aea7ebc12898bfb.lock for Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\sf
+412 verbose readDependencies loading dependencies from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\async\package.json
+413 silly install resolved []
+414 verbose about to build Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\async
+415 info build Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\async
+416 info linkStuff async@0.1.18
+417 silly linkStuff async@0.1.18 has Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules as its parent node_modules
+418 verbose linkBins async@0.1.18
+419 verbose linkMans async@0.1.18
+420 verbose rebuildBundles async@0.1.18
+421 info install async@0.1.18
+422 info postinstall async@0.1.18
+423 verbose unlock done using C:\Users\Serge\AppData\Roaming\npm-cache\_locks\async-4d72624229958df2.lock for Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\async
+424 verbose write writing to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\package.json
+425 info preinstall optimist@0.3.7
+426 verbose readDependencies loading dependencies from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\package.json
+427 silly prepareForInstallMany adding wordwrap@~0.0.2 from optimist dependencies
+428 verbose readDependencies loading dependencies from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\package.json
+429 silly cache add args [ 'wordwrap@~0.0.2', null ]
+430 verbose cache add spec wordwrap@~0.0.2
+431 silly cache add parsed spec { raw: 'wordwrap@~0.0.2',
+431 silly cache add   scope: null,
+431 silly cache add   name: 'wordwrap',
+431 silly cache add   rawSpec: '~0.0.2',
+431 silly cache add   spec: '>=0.0.2 <0.1.0',
+431 silly cache add   type: 'range' }
+432 silly addNamed wordwrap@>=0.0.2 <0.1.0
+433 verbose addNamed ">=0.0.2 <0.1.0" is a valid semver range for wordwrap
+434 silly addNameRange { name: 'wordwrap', range: '>=0.0.2 <0.1.0', hasData: false }
+435 silly mapToRegistry name wordwrap
+436 silly mapToRegistry using default registry
+437 silly mapToRegistry registry https://registry.npmjs.org/
+438 silly mapToRegistry uri https://registry.npmjs.org/wordwrap
+439 verbose addNameRange registry:https://registry.npmjs.org/wordwrap not in flight; fetching
+440 verbose request uri https://registry.npmjs.org/wordwrap
+441 verbose request no auth needed
+442 info attempt registry request try #1 at 15:53:55
+443 verbose etag "5TO81278FOKJW7UV893Z7ZH0U"
+444 http request GET https://registry.npmjs.org/wordwrap
+445 http 304 https://registry.npmjs.org/wordwrap
+446 silly get cb [ 304,
+446 silly get   { date: 'Sun, 23 Aug 2015 13:54:07 GMT',
+446 silly get     via: '1.1 varnish',
+446 silly get     'cache-control': 'max-age=60',
+446 silly get     etag: '"5TO81278FOKJW7UV893Z7ZH0U"',
+446 silly get     age: '27',
+446 silly get     connection: 'keep-alive',
+446 silly get     'x-served-by': 'cache-fra1240-FRA',
+446 silly get     'x-cache': 'HIT',
+446 silly get     'x-cache-hits': '1',
+446 silly get     'x-timer': 'S1440338047.622340,VS0,VE0',
+446 silly get     vary: 'Accept' } ]
+447 verbose etag https://registry.npmjs.org/wordwrap from cache
+448 verbose get saving wordwrap to C:\Users\Serge\AppData\Roaming\npm-cache\registry.npmjs.org\wordwrap\.cache.json
+449 silly addNameRange number 2 { name: 'wordwrap', range: '>=0.0.2 <0.1.0', hasData: true }
+450 silly addNameRange versions [ 'wordwrap', [ '0.0.1', '0.0.2', '0.0.3', '1.0.0' ] ]
+451 silly addNamed wordwrap@0.0.3
+452 verbose addNamed "0.0.3" is a plain semver version for wordwrap
+453 silly cache afterAdd wordwrap@0.0.3
+454 verbose afterAdd C:\Users\Serge\AppData\Roaming\npm-cache\wordwrap\0.0.3\package\package.json not in flight; writing
+455 verbose afterAdd C:\Users\Serge\AppData\Roaming\npm-cache\wordwrap\0.0.3\package\package.json written
+456 silly install resolved [ { name: 'wordwrap',
+456 silly install resolved     description: 'Wrap those words. Show them at what columns to start and stop.',
+456 silly install resolved     version: '0.0.3',
+456 silly install resolved     repository:
+456 silly install resolved      { type: 'git',
+456 silly install resolved        url: 'git://github.com/substack/node-wordwrap.git' },
+456 silly install resolved     main: './index.js',
+456 silly install resolved     keywords: [ 'word', 'wrap', 'rule', 'format', 'column' ],
+456 silly install resolved     directories: { lib: '.', example: 'example', test: 'test' },
+456 silly install resolved     scripts: { test: 'expresso' },
+456 silly install resolved     devDependencies: { expresso: '=0.7.x' },
+456 silly install resolved     engines: { node: '>=0.4.0' },
+456 silly install resolved     license: 'MIT',
+456 silly install resolved     author:
+456 silly install resolved      { name: 'James Halliday',
+456 silly install resolved        email: 'mail@substack.net',
+456 silly install resolved        url: 'http://substack.net' },
+456 silly install resolved     gitHead: 'e59aa1bd338914019456bdfba034508c9c4cb29d',
+456 silly install resolved     bugs: { url: 'https://github.com/substack/node-wordwrap/issues' },
+456 silly install resolved     homepage: 'https://github.com/substack/node-wordwrap#readme',
+456 silly install resolved     _id: 'wordwrap@0.0.3',
+456 silly install resolved     _shasum: 'a3d5da6cd5c0bc0008d37234bbaf1bed63059107',
+456 silly install resolved     _from: 'wordwrap@>=0.0.2 <0.1.0',
+456 silly install resolved     _npmVersion: '2.9.0',
+456 silly install resolved     _nodeVersion: '2.0.0',
+456 silly install resolved     _npmUser: { name: 'substack', email: 'substack@gmail.com' },
+456 silly install resolved     dist:
+456 silly install resolved      { shasum: 'a3d5da6cd5c0bc0008d37234bbaf1bed63059107',
+456 silly install resolved        tarball: 'http://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz' },
+456 silly install resolved     maintainers: [ [Object] ],
+456 silly install resolved     _resolved: 'https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz',
+456 silly install resolved     readme: 'ERROR: No README data found!' } ]
+457 info install wordwrap@0.0.3 into Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist
+458 info installOne wordwrap@0.0.3
+459 verbose installOne of wordwrap to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist not in flight; installing
+460 verbose lock using C:\Users\Serge\AppData\Roaming\npm-cache\_locks\wordwrap-2229761dda878cc1.lock for Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+461 silly install write writing wordwrap 0.0.3 to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+462 verbose unbuild node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+463 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap is being purged from base Z:\Serge\My Documents\Electronique\POV\web\webserver
+464 verbose gentlyRm don't care about contents; nuking Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+465 verbose tar unpack C:\Users\Serge\AppData\Roaming\npm-cache\wordwrap\0.0.3\package.tgz
+466 verbose tar unpacking to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+467 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap is being purged
+468 verbose gentlyRm don't care about contents; nuking Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+469 silly gunzTarPerm modes [ '777', '666' ]
+470 silly gunzTarPerm extractEntry package.json
+471 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+472 silly gunzTarPerm extractEntry LICENSE
+473 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+474 silly gunzTarPerm extractEntry index.js
+475 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+476 silly gunzTarPerm extractEntry README.markdown
+477 silly gunzTarPerm modified mode [ 'README.markdown', 420, 438 ]
+478 silly gunzTarPerm extractEntry example/center.js
+479 silly gunzTarPerm modified mode [ 'example/center.js', 420, 438 ]
+480 silly gunzTarPerm extractEntry example/meat.js
+481 silly gunzTarPerm modified mode [ 'example/meat.js', 420, 438 ]
+482 silly gunzTarPerm extractEntry test/break.js
+483 silly gunzTarPerm modified mode [ 'test/break.js', 420, 438 ]
+484 silly gunzTarPerm extractEntry test/wrap.js
+485 silly gunzTarPerm modified mode [ 'test/wrap.js', 420, 438 ]
+486 silly gunzTarPerm extractEntry test/idleness.txt
+487 silly gunzTarPerm modified mode [ 'test/idleness.txt', 420, 438 ]
+488 verbose write writing to Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap\package.json
+489 info preinstall wordwrap@0.0.3
+490 verbose readDependencies loading dependencies from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap\package.json
+491 verbose readDependencies loading dependencies from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap\package.json
+492 silly install resolved []
+493 verbose about to build Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+494 info build Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+495 info linkStuff wordwrap@0.0.3
+496 silly linkStuff wordwrap@0.0.3 has Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules as its parent node_modules
+497 verbose linkBins wordwrap@0.0.3
+498 verbose linkMans wordwrap@0.0.3
+499 verbose rebuildBundles wordwrap@0.0.3
+500 info install wordwrap@0.0.3
+501 info postinstall wordwrap@0.0.3
+502 verbose unlock done using C:\Users\Serge\AppData\Roaming\npm-cache\_locks\wordwrap-2229761dda878cc1.lock for Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+503 verbose about to build Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist
+504 info build Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist
+505 info linkStuff optimist@0.3.7
+506 silly linkStuff optimist@0.3.7 has Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules as its parent node_modules
+507 verbose linkBins optimist@0.3.7
+508 verbose linkMans optimist@0.3.7
+509 verbose rebuildBundles optimist@0.3.7
+510 verbose rebuildBundles [ 'wordwrap' ]
+511 info install optimist@0.3.7
+512 info postinstall optimist@0.3.7
+513 verbose unlock done using C:\Users\Serge\AppData\Roaming\npm-cache\_locks\optimist-124bfe901a62539d.lock for Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2\node_modules\optimist
+514 verbose about to build Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+515 info build Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+516 info linkStuff serialport2@0.0.5
+517 silly linkStuff serialport2@0.0.5 has Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules as its parent node_modules
+518 verbose linkBins serialport2@0.0.5
+519 verbose link bins [ { serialportlist: './bin/serialportList.js',
+519 verbose link bins     serialportterm: './bin/serialportTerminal.js' },
+519 verbose link bins   'Z:\\Serge\\My Documents\\Electronique\\POV\\web\\webserver\\node_modules\\.bin',
+519 verbose link bins   false ]
+520 verbose linkMans serialport2@0.0.5
+521 verbose rebuildBundles serialport2@0.0.5
+522 verbose rebuildBundles [ 'async', 'bindings', 'optimist', 'sf' ]
+523 info install serialport2@0.0.5
+524 verbose unsafe-perm in lifecycle true
+525 info serialport2@0.0.5 Failed to exec install script
+526 verbose unlock done using C:\Users\Serge\AppData\Roaming\npm-cache\_locks\serialport2-7eea86ff02ebdde0.lock for Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+527 verbose stack Error: serialport2@0.0.5 install: `node-gyp rebuild`
+527 verbose stack Exit status 1
+527 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+527 verbose stack     at EventEmitter.emit (events.js:110:17)
+527 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+527 verbose stack     at ChildProcess.emit (events.js:110:17)
+527 verbose stack     at maybeClose (child_process.js:1015:16)
+527 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+528 verbose pkgid serialport2@0.0.5
+529 verbose cwd Z:\Serge\My Documents\Electronique\POV\web\webserver
+530 error Windows_NT 6.3.9600
+531 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "serialport2"
+532 error node v0.12.7
+533 error npm  v2.11.3
+534 error code ELIFECYCLE
+535 error serialport2@0.0.5 install: `node-gyp rebuild`
+535 error Exit status 1
+536 error Failed at the serialport2@0.0.5 install script 'node-gyp rebuild'.
+536 error This is most likely a problem with the serialport2 package,
+536 error not with npm itself.
+536 error Tell the author that this fails on your system:
+536 error     node-gyp rebuild
+536 error You can get their info via:
+536 error     npm owner ls serialport2
+536 error There is likely additional logging output above.
+537 verbose exit [ 1, true ]
+538 verbose unbuild node_modules\serialport2
+539 info preuninstall serialport2@0.0.5
+540 info uninstall serialport2@0.0.5
+541 verbose unbuild rmStuff serialport2@0.0.5 from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules
+542 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportlist.cmd is being gently removed
+543 silly gentlyRm verifying Z:\Serge\My Documents\Electronique\POV\web\webserver is an npm working directory
+544 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportterm.cmd is being gently removed
+545 silly gentlyRm verifying Z:\Serge\My Documents\Electronique\POV\web\webserver is an npm working directory
+546 silly gentlyRm containing path Z:\Serge\My Documents\Electronique\POV\web\webserver is under npm's control, in Z:\Serge\My Documents\Electronique\POV\web\webserver
+547 silly gentlyRm deletion target Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportlist.cmd is under Z:\Serge\My Documents\Electronique\POV\web\webserver
+548 verbose gentlyRm vacuuming from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportlist.cmd up to Z:\Serge\My Documents\Electronique\POV\web\webserver
+549 silly gentlyRm containing path Z:\Serge\My Documents\Electronique\POV\web\webserver is under npm's control, in Z:\Serge\My Documents\Electronique\POV\web\webserver
+550 silly gentlyRm deletion target Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportterm.cmd is under Z:\Serge\My Documents\Electronique\POV\web\webserver
+551 verbose gentlyRm vacuuming from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportterm.cmd up to Z:\Serge\My Documents\Electronique\POV\web\webserver
+552 silly vacuum-fs removing Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportlist.cmd
+553 silly vacuum-fs removing Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportterm.cmd
+554 silly vacuum-fs quitting because other entries in Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin
+555 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportlist is being gently removed
+556 silly gentlyRm verifying Z:\Serge\My Documents\Electronique\POV\web\webserver is an npm working directory
+557 silly gentlyRm containing path Z:\Serge\My Documents\Electronique\POV\web\webserver is under npm's control, in Z:\Serge\My Documents\Electronique\POV\web\webserver
+558 silly gentlyRm deletion target Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportlist is under Z:\Serge\My Documents\Electronique\POV\web\webserver
+559 verbose gentlyRm vacuuming from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportlist up to Z:\Serge\My Documents\Electronique\POV\web\webserver
+560 silly vacuum-fs quitting because other entries in Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin
+561 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportterm is being gently removed
+562 silly gentlyRm verifying Z:\Serge\My Documents\Electronique\POV\web\webserver is an npm working directory
+563 silly gentlyRm containing path Z:\Serge\My Documents\Electronique\POV\web\webserver is under npm's control, in Z:\Serge\My Documents\Electronique\POV\web\webserver
+564 silly gentlyRm deletion target Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportterm is under Z:\Serge\My Documents\Electronique\POV\web\webserver
+565 verbose gentlyRm vacuuming from Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportterm up to Z:\Serge\My Documents\Electronique\POV\web\webserver
+566 silly vacuum-fs removing Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportlist
+567 silly vacuum-fs removing Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin\serialportterm
+568 silly vacuum-fs quitting because other entries in Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin
+569 silly vacuum-fs quitting because other entries in Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\.bin
+570 info postuninstall serialport2@0.0.5
+571 silly gentlyRm Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2 is being purged from base Z:\Serge\My Documents\Electronique\POV\web\webserver
+572 verbose gentlyRm don't care about contents; nuking Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+573 silly vacuum-fs purging Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules\serialport2
+574 silly vacuum-fs quitting because other entries in Z:\Serge\My Documents\Electronique\POV\web\webserver\node_modules
