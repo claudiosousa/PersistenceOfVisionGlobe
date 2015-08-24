@@ -1,2 +1,2 @@
-node "Z:\Serge\My Documents\Electronique\POV\web\webserver\app.js"
+node \webserver\app.js
 pause

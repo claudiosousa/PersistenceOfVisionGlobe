@@ -21,7 +21,7 @@
     "jqueryui": "1.10",
     "numeral": "latest",
     "page-transitions": "latest",
-    "uikit": "2.6",
+    "uikit": "",
     "requirejs": "2.1",
     "moment": "~2.7.0"
   },
