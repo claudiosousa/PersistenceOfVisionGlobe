@@ -1,7 +1,7 @@
 #define SENSOR_PIN 2
 
-const byte H_RES = 120;
 const byte ROTATION_SPEED = 80; //1 faster, 255 slower
+const byte H_RES = 120;
 volatile unsigned long nextFrameTime = 0;
 volatile unsigned long horizontalStepDelta = 0;
 volatile unsigned int  nextHIndex = 0;
@@ -20,16 +20,16 @@ void  setupSynchro() {
 
   nextFrameTime = -1;
 }
-
+boolean ledsdWaitingForNextTurn = false;
 void loopSynchro() {
   if (micros() < nextFrameTime)
     return;
 
   if (nextHIndex == H_RES) {
-    /*if (!ledsdWaitingForNextTurn) {
-     ledsdWaitingForNextTurn = true;
-     writeToSrs(blank);
-     }*/
+    if (!ledsdWaitingForNextTurn) {
+      ledsdWaitingForNextTurn = true;
+      writeToSrs(blankFrames, true);
+    }
     return ;
   }
   rotationOffsetCounter++;    
@@ -47,9 +47,9 @@ void loopSynchro() {
 }
 
 void showVFrame(unsigned int hIndex) {
-    hIndex = (hIndex+rotationOffset)%H_RES;
-    byte* hFramme = image+((hIndex %(H_RES/2))  * 24 * 2);
-    writeToSrs(hFramme, hIndex>=(H_RES/2));
+  hIndex = (hIndex+rotationOffset)%H_RES;
+  byte* hFramme = image+((hIndex %(H_RES/2))  * 24 * 2);
+  writeToSrs(hFramme, hIndex>=(H_RES/2));
 }
 
 ISR(INT2_vect){
@@ -58,9 +58,11 @@ ISR(INT2_vect){
   if (turnDuration < 10000)
     return;
   //  Serial.println("New turn" + String(micros()));
+  ledsdWaitingForNextTurn = false;
   nextFrameTime = lastTurnTime =  currentTurnTime;
   nextHIndex = 0;
 }
+
 
 
 

@@ -1,0 +1,5 @@
+body.disconnected button {
+    pointer-events: none;
+    color: white;
+    background-color: #eee;
+}
