@@ -1,5 +1,6 @@
 #include <SPI.h>
 #include "RF24.h"
+  #include <Servo.h>
 
 RF24 radio(9, 10);
 
@@ -11,6 +12,15 @@ byte imageArray[] =
 ;
 
 void setup() {
+Servo firstESC;
+  firstESC.attach(6);
+  firstESC.writeMicroseconds(0);
+  delay(2000);
+  firstESC.writeMicroseconds(700);
+    delay(2000);
+  firstESC.writeMicroseconds(900);
+
+
   Serial.begin(57600);
   randomSeed(analogRead(0));
   radio.begin();
@@ -23,7 +33,7 @@ void setup() {
 
 typedef struct RF24Message
 {
-  unsigned int action;
+  byte action;
   unsigned int length;
 } 
 RF24Message;
@@ -39,7 +49,7 @@ void sendImage(){
   radio.stopListening();    
 
   message.length = cycles * bufferSize;
-  message.action = 1684;
+  message.action = 168;
   while(!radio.write(&message, messageSize)){
     delay(20);
   }
@@ -64,7 +74,7 @@ void sendRandomImage(){
   radio.stopListening();    
 
   message.length = cycles * bufferSize;
-  message.action = 1684;
+  message.action = 168;
   while(!radio.write(&message, messageSize)){
     delay(20);
   }
@@ -72,7 +82,7 @@ void sendRandomImage(){
 
   for(int c=0; c<cycles; c++){   
     for (byte i=0; i<bufferSize; i++){
-      buffer[i] = (byte)random(256);
+      buffer[i] = 255;//;(byte)random(256);
     } 
 
     while(!radio.writeFast(&buffer, bufferSize)){       

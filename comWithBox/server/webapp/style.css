@@ -3,3 +3,9 @@ body.disconnected button {
     color: white;
     background-color: #eee;
 }
+
+body > div{
+    border:1px solid black;
+    margin:5px;
+    background-color:lightgrey;
+}

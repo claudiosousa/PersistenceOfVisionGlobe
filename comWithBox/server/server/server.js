@@ -26,7 +26,7 @@ arduinoProxy.connect(function () {
     wss.on('connection', function (ws) {
 
         ws.on('message', function (message) {
-            console.log('received: %s', message);
+            console.log('received from socket: %s', message.length > 25 ? message.substr(0, 20) + "..." : message);
             var message = JSON.parse(message);
             arduinoProxy.send(message.action, message.body);
             //ws.send(message);

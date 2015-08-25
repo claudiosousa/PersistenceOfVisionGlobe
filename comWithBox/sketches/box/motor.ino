@@ -11,14 +11,15 @@ void setupMotor(){
 
 void stopMotor(){
   firstESC.writeMicroseconds(700);
-//  digitalWrite(13, 0);
-}
 
+}
+void setMotorSpeed(int speed){
+   firstESC.writeMicroseconds(speed);
+}
 
 void startMotor(){
   firstESC.writeMicroseconds(900);
   delay(2000);
-  firstESC.writeMicroseconds(1200);
-  //  digitalWrite(13, 1);
+  //firstESC.writeMicroseconds(1200);
 }
 

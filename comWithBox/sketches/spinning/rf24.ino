@@ -5,11 +5,13 @@ RF24 radio(1, 0);
 byte addresses[][6] = {
   "BoxPc", "PcBox"};
 
+
 typedef struct RF24Message
 {
   byte action;
   unsigned int length;
 } 
+
 RF24Message;
 
 RF24Message message;
@@ -34,47 +36,61 @@ void setupRF24() {
   reset();        
 }
 
+unsigned int messageReceivedAt;
 void reset() {
-  memset(&message,0, messageSize);
+  message.action = 0;
   received = 0; 
 }
 
-void readRF24() {  
-  byte* b;
+void tryReadRF24() {  
 
   if (!radio.available()){
     return;
   }
-
+  if ( millis()-messageReceivedAt>3000)
+    reset();
   if (message.action == 0){
-    while(radio.available()){       
+    while(radio.available()){
       radio.read(&message, messageSize);
-    }    
+    }
+    messageReceivedAt =  millis();
   }
 
+  byte* b;
+  boolean finishedMessage = false;
   switch (message.action){
+  case 167:
+    radio.read(&buffer, 1);
+    ROTATION_SPEED = buffer[0];
+    break;
   case 168:
-    while(radio.available()){       
-      radio.read(&buffer, bufferSize);
+
+    while(radio.available() && !finishedMessage){ 
+      byte toRead = min(32, message.length - received);
+      radio.read(&buffer, toRead);
       b = imageArray + received;
-      memcpy(b, buffer, bufferSize);
-      received += bufferSize;
+      memcpy(b, buffer, toRead);
+      received += toRead;
       if (received >= message.length){
-        reset();        
-        break;        
+        reset();  
+        finishedMessage = true;        
       }  
     }
 
-    //memset(&imageArray, 0, sizeof(imageArray));
-    //memcpy(b, &count, messageSize);
     break;  
-
   default:
-    // Perdu, try again
-    reset();        
-    break;
-  }
+    reset();  
+  }  
 }
+
+
+
+
+
+
+
+
+
 
 
 

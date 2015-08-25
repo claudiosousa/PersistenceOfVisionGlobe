@@ -1,11 +1,12 @@
 void setup() {
-  setupMessaging();
+  setupRadio();
+  setupPcMessaging();
   setupMotor();
 }
 
 
 void loop() {
-  readMessage();
+  tryReadPCMessage();
 }
 
 

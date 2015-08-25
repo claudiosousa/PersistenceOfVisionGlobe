@@ -1,7 +1,8 @@
 var serialPort = require("serialport");
 
 var sp;
-
+var waitingPackets = [];
+var isWaitingForPacketReceivedReponse = false;
 var initiateCommunication = function (port, cb) {
 
     sp = new serialPort.SerialPort(port, {
@@ -21,11 +22,17 @@ var initiateCommunication = function (port, cb) {
         console.log('Open connection');
 
         sp.on('data', function (data) {
-            console.log("received: " + data);
+            console.log("received from arduino: " + data);
+            /*for (var i = 0; i < data.length; ++i)
+                console.log(data.charCodeAt(i));
+                */
+            if (data.indexOf("DPR") == 0)
+                checkIfCanSendNextPacket(true);
+           
             //sendMessage(sp);
         });
 
-     
+
         /*
         sp.write("ls\n", function (err, results) {
             console.log('err ' + err);
@@ -34,7 +41,7 @@ var initiateCommunication = function (port, cb) {
         */
         cb();
     });
-  
+
 }
 
 
@@ -61,12 +68,30 @@ module.exports.connect = function (cb) {
     });
 }
 
-module.exports.send = function (action, body) {
-    var bytes = [];
-    bytes.push(action);
-    bytes.push(body.length);
-    for (var i = 0; i < body.length; ++i) {
-        bytes.push(body.charCodeAt(i));
-    }
-    sp.write(bytes);
+var checkIfCanSendNextPacket = function (packetReceived) {
+    if (packetReceived)
+        isWaitingForPacketReceivedReponse = false;
+    if (isWaitingForPacketReceivedReponse)
+        return;
+    if (waitingPackets.length == 0)
+        return;
+    isWaitingForPacketReceivedReponse = true;
+    var nextPacket =  waitingPackets.splice(0, 1)[0];
+    console.log("Sending pckg of size: " + nextPacket.length);
+    sp.write(nextPacket);
+}
+
+module.exports.send = function (action, data) {
+    var header = [];
+    header.push(action);
+    var dataLength = data.length;
+    header.push(dataLength >> 8);
+    header.push(dataLength % 256);
+    console.log("Action byte1: " + Math.trunc(dataLength / 256));
+    console.log("Action byte2: " + dataLength % 256);
+    waitingPackets.push(header);
+    while (data.length > 0)
+        waitingPackets.push(data.splice(0, Math.min(32, data.length)));
+
+    checkIfCanSendNextPacket();
 }
