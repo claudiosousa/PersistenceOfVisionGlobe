@@ -6,33 +6,37 @@
 </head>
 <body class="disconnected">
     <div>
-        <div>
-            Engine:
-        </div>
+        Engine:<br />
         <button onclick="startMotor()">Start</button>
         <button onclick="stopMotor()">stop</button>
         <div>
-            <label>Engine speed (900=slow, 2000=fast): <input id="engineSpeedTxt" value="1200" /></label>
+            <div>Engine speed:</div>
+            <label>(900=slow, 2000=fast):<input id="engineSpeedTxt" value="1200" /></label>
             <button onclick="sendEngineSpeed(Number(engineSpeedTxt.value))">Update</button>
         </div>
     </div>
     <div>
-        <div>
-            Image:
-        </div>
+        Image:<br />
         <button onclick="sendColor(255)">White image</button>
         <button onclick="sendColor(0)">Black image</button>
         <button onclick="sendImg(img1)">World map</button>
         <button onclick="sendImg(img2)">Pokemon</button>
-        <div>
-            <label>Image spin speed (1=fast, 255=slow): <input id="speedTxt" value="80" /></label>
-            <button onclick="sendSpeed(Number(speedTxt.value))">Update</button>
-        </div>
-    </div>  
+    </div>
     <div>
-        <div>
-            Test:
-        </div>
+        Image spin<br />
+        <form id="spinDirectionFrm">
+            <label>
+                Direction:
+                <input type="radio" name="spinDirection" value="1" checked="checked">Clock Wise
+                <input type="radio" name="spinDirection" value="2">Counter Clock Wise
+                <input type="radio" name="spinDirection" value="0">Stoped
+            </label>
+        </form>
+        <label>Speed (1=fast, 255=slow): <input id="speedTxt" value="80" /></label>
+        <button onclick="sendSpeed(Number(spinDirectionFrm['spinDirection'].value), Number(speedTxt.value))">Update</button>
+    </div>
+    <div>
+        Test:<br />
         <label>Action: <input id="actionTxt" value="2" /></label>
         <label>Data: <input id="dataTxt" value="abcdefghijklmnopqrstuvwxyz0123456789" /></label>
         <button onclick="sendTxtMessage()">Send message</button>
