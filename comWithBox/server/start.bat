@@ -1,3 +1,2 @@
-node server/server.js --port=80
-
+node server/server.js --port=81
 pause

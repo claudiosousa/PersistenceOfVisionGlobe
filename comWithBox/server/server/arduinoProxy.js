@@ -47,25 +47,30 @@ var initiateCommunication = function (port, cb) {
 
 
 module.exports.connect = function (cb) {
-    serialPort.list(function (err, ports) {
-        var arduinoPorts = ports.filter(function (p) {
-            return p.manufacturer.indexOf('Arduino') >= 0
-        })
-        if (arduinoPorts.length == 0)
-            throw "No arduino port was found";
-        if (arduinoPorts.length > 1)
-            console.log("More than one arduino port was found. Picking first...");
+	var searchForArduino = function(){
+		serialPort.list(function (err, ports) {
+			var arduinoPorts = ports.filter(function (p) {
+				return p.manufacturer.indexOf('Arduino') >= 0
+			})
+			if (arduinoPorts.length == 0){
+				console.log( "No arduino port was found");
+				setTimeout(searchForArduino, 1000);
+			}
+			if (arduinoPorts.length > 1)
+				console.log("More than one arduino port was found. Picking first...");
 
-        console.log("Connecting to arduino on port '" + arduinoPorts[0].comName + "'")
-        initiateCommunication(arduinoPorts[0].comName, cb);
-        /*
-          ports.forEach(function(port) {
-            console.log(port.comName);
-            console.log(port.pnpId);
-            console.log(port.manufacturer);
-          });
-          */
-    });
+			console.log("Connecting to arduino on port '" + arduinoPorts[0].comName + "'")
+			initiateCommunication(arduinoPorts[0].comName, cb);
+			/*
+			  ports.forEach(function(port) {
+				console.log(port.comName);
+				console.log(port.pnpId);
+				console.log(port.manufacturer);
+			  });
+			  */
+		});
+	}
+	searchForArduino();
 }
 
 var checkIfCanSendNextPacket = function (packetReceived) {
