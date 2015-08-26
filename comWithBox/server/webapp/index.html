@@ -11,7 +11,7 @@
         <button onclick="stopMotor()">stop</button>
         <div>
             <div>Engine speed:</div>
-            <label>(900=slow, 2000=fast):<input id="engineSpeedTxt" value="1200" /></label>
+            <label>(900=slow, 1600=fast):<input type="number" min="0" max="1600" id="engineSpeedTxt" value="1200" /></label>
             <button onclick="sendEngineSpeed(Number(engineSpeedTxt.value))">Update</button>
         </div>
     </div>
