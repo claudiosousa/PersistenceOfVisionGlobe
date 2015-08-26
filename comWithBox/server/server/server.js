@@ -3,7 +3,12 @@ var path = require('path');
 var httpServ = require('http');
 var WebSocketServer = require('ws').Server;
 var arduinoProxy = require('./arduinoProxy.js');
-
+var argv = require('argv').option({
+    name: 'port',
+    short: 'p',
+    type: 'string',
+    description: 'Port'
+});;
 
 var app = express();
 
@@ -18,7 +23,7 @@ app.post('/someUrl', function (req, res, next) {
 
 
 arduinoProxy.connect(function () {
-    websocketserver = httpServ.createServer(app).listen(81, function () {
+    websocketserver = httpServ.createServer(app).listen(argv.port, function () {
         console.log('Webapp listening on port %s', websocketserver.address().port);
     });
 
