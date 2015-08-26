@@ -33,4 +33,4 @@ arduinoProxy.connect(function () {
         });
         //ws.send('something');
     });
-})
+}, argv.retry)

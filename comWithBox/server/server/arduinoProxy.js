@@ -45,16 +45,19 @@ var initiateCommunication = function (port, cb) {
 }
 
 
-
-module.exports.connect = function (cb) {
+module.exports.connect = function (cb, retry) {
 	var searchForArduino = function(){
 		serialPort.list(function (err, ports) {
 			var arduinoPorts = ports.filter(function (p) {
 				return p.manufacturer.indexOf('Arduino') >= 0
 			})
 			if (arduinoPorts.length == 0){
-				console.log( "No arduino port was found");
-				setTimeout(searchForArduino, 1000);
+				
+				if (retry){
+					console.log( "No arduino port was found");
+					setTimeout(searchForArduino, 1000);
+				}else
+					throw "No arduino port was found";
 			}
 			if (arduinoPorts.length > 1)
 				console.log("More than one arduino port was found. Picking first...");
