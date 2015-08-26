@@ -47,12 +47,12 @@ void tryReadRF24() {
   if (!radio.available()){
     return;
   }
-  if ( millis()-messageReceivedAt>3000)
+  if ( millis()-messageReceivedAt>4000)
     reset();
   if (message.action == 0){
-    while(radio.available()){
+    //while(radio.available()){
       radio.read(&message, messageSize);
-    }
+    //}
     messageReceivedAt =  millis();
   }
 
@@ -60,8 +60,12 @@ void tryReadRF24() {
   boolean finishedMessage = false;
   switch (message.action){
   case 167:
-    radio.read(&buffer, 1);
-    ROTATION_SPEED = buffer[0];
+  if(radio.available()){
+    radio.read(&buffer, 2);
+    ROTATION_DIRECTION = buffer[0];
+    ROTATION_SPEED = buffer[1];
+    reset();  
+  }
     break;
   case 168:
 

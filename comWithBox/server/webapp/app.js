@@ -50,8 +50,8 @@ var sendEngineSpeed = function (speed) {
     sendMsg(12, [speed>> 8, speed % 256]);
 }
 
-var sendSpeed = function (speed) {
-    sendMsg(167, [speed]);
+var sendSpeed = function (direction, speed) {
+    sendMsg(167, [direction, speed]);
 }
 var sendTxtMessage = function () {
 

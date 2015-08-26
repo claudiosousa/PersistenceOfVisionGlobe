@@ -7,7 +7,7 @@ volatile unsigned long horizontalStepDelta = 0;
 volatile unsigned int  nextHIndex = 0;
 volatile unsigned long turnDuration = 0;
 volatile unsigned long lastTurnTime = 0;
-volatile byte rotationOffset = 0;
+volatile int rotationOffset = 0;
 volatile byte rotationOffsetCounter = 0;
 
 void  setupSynchro() {
@@ -33,12 +33,17 @@ boolean tryWriteVFrame() {
     }
     return false;
   }
-  rotationOffsetCounter++;    
-  if (rotationOffsetCounter == ROTATION_SPEED){
-    rotationOffset++;
-    if (rotationOffset >H_RES) 
-      rotationOffset = 0;
-    rotationOffsetCounter = 0;
+  if (ROTATION_DIRECTION!=0){
+    rotationOffsetCounter++;    
+    if (rotationOffsetCounter >= ROTATION_SPEED){
+      if (ROTATION_DIRECTION == 1)
+        rotationOffset++;
+      else
+        rotationOffset--;
+      if (rotationOffset >H_RES || rotationOffset <-H_RES) 
+        rotationOffset = 0;
+      rotationOffsetCounter = 0;
+    }
   }
 
   showVFrame(nextHIndex);
@@ -48,7 +53,7 @@ boolean tryWriteVFrame() {
 }
 
 void showVFrame(unsigned int hIndex) {
-  hIndex = (hIndex+rotationOffset)%H_RES;
+  hIndex = ((hIndex+rotationOffset)+H_RES)%H_RES;
   byte* hFramme = image+((hIndex %(H_RES/2))  * 24 * 2);
   writeToSrs(hFramme, hIndex>=(H_RES/2));
 }
@@ -63,6 +68,8 @@ ISR(INT2_vect){
   nextFrameTime = lastTurnTime =  currentTurnTime;
   nextHIndex = 0;
 }
+
+
 
 
 
