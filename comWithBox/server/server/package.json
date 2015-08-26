@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "argv": "0.0.2",
     "express": "^4.13.3",
+    "minimist": "^1.2.0",
     "serialport": "^1.7.4",
     "ws": "^0.8.0"
   },

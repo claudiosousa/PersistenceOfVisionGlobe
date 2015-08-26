@@ -3,12 +3,7 @@ var path = require('path');
 var httpServ = require('http');
 var WebSocketServer = require('ws').Server;
 var arduinoProxy = require('./arduinoProxy.js');
-var argv = require('argv').option({
-    name: 'port',
-    short: 'p',
-    type: 'string',
-    description: 'Port'
-});;
+var argv = require('minimist')(process.argv.slice(2));
 
 var app = express();
 
