@@ -4,22 +4,22 @@ byte POSITION_OFF = 50;
 byte POSITION_ON = 60;
 byte SERVO_PIN = 3;
 byte PHOTO_PIN = A0;
-byte PHOTO_THRESHOLD = 200;
-byte LED_PIN = 0;
+int PHOTO_THRESHOLD = 512;
+byte LED_PIN = 2;
 
 Servo zotacServo; 
 
 void setupZotac() {
-  pinMode(LED_PIN);
+  pinMode(LED_PIN, OUTPUT);
 }
 
 unsigned long lastLedCheck = 0;
 void checkLEDStatus() {
-  long unsigned time = millis();
+  unsigned long time = millis();
   if (time- lastLedCheck<1000)
     return;
   lastLedCheck = time;
-  digitalWrite(LED_PIN, analogRead(PHOTO_PIN) > PHOTO_THRESHOLD);
+  digitalWrite(LED_PIN,analogRead(PHOTO_PIN) > PHOTO_THRESHOLD);
 }
 
 void pressZotacButton() {
