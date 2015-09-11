@@ -18,7 +18,7 @@ app.post('/someUrl', function (req, res, next) {
 
 shutdown = function(){
 	require('child_process').exec('shutdown -s -f -t 0')
-	spawn("shutdown", )
+	spawn("shutdown" )
 }
 
 arduinoProxy.connect(function () {
