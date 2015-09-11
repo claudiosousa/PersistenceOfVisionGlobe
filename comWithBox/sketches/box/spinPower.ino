@@ -1,4 +1,4 @@
-byte SPIN_RELAY_PIN = 3;
+byte SPIN_RELAY_PIN = 4;
 
 void setupSpin(){
   pinMode(SPIN_RELAY_PIN, OUTPUT);
