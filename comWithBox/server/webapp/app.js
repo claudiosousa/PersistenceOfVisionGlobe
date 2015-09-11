@@ -27,7 +27,8 @@ var stopMotor = function () {
 }
 
 var powerOff = function () {
-    sendMsg(7);
+    //sendMsg(7); = press zotac button
+	sendMsg("shutdown");
 }
 
 var spinningPowerOff = function () {

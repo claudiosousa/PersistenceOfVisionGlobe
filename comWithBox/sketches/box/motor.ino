@@ -17,8 +17,8 @@ void setMotorSpeed(int speed){
 }
 
 void startMotor(){
-  firstESC.writeMicroseconds(900);
+  firstESC.writeMicroseconds(1300);
   delay(2000);
-  //firstESC.writeMicroseconds(1200);
+  firstESC.writeMicroseconds(1400);
 }
 

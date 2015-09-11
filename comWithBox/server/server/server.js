@@ -16,6 +16,10 @@ app.post('/someUrl', function (req, res, next) {
 });
 */
 
+shutdown = function(){
+	require('child_process').exec('shutdown -s -f -t 0')
+	spawn("shutdown", )
+}
 
 arduinoProxy.connect(function () {
     websocketserver = httpServ.createServer(app).listen(argv.port, function () {
@@ -28,7 +32,10 @@ arduinoProxy.connect(function () {
         ws.on('message', function (message) {
             console.log('received from socket: %s', message.length > 25 ? message.substr(0, 20) + "..." : message);
             var message = JSON.parse(message);
-            arduinoProxy.send(message.action, message.body);
+			if (message.action == "shutdown")
+				shutdown();
+			else			
+				arduinoProxy.send(message.action, message.body);
             //ws.send(message);
         });
         //ws.send('something');
