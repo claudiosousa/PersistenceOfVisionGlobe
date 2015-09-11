@@ -1,5 +1,6 @@
 void setup() {
   setupSpin();
+  setupZotac();
 
   delay(1000);  
   pressZotacButton();
@@ -9,9 +10,9 @@ void setup() {
   setupMotor();
 }
 
-
 void loop() {
   tryReadPCMessage();
+  checkLEDStatus();
 }
 
 
