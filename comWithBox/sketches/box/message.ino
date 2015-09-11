@@ -71,13 +71,18 @@ void handleMessageReceived(){
   Serial.println("received action: "+String(currentMessage.action)+" with body length "+String(currentMessage.bodyLength));
   Serial.println("DPR");
   //return;
-  if (currentMessage.action == 10)
+  if (currentMessage.action == 7)
+    pressZotacButton();
+  else if (currentMessage.action == 10)
     startMotor();
   else if (currentMessage.action == 11)
     stopMotor();   
   else if (currentMessage.action == 12){
-
-  }  
+  } 
+  else if (currentMessage.action == 20)
+    spinPowerOff();   
+  else if (currentMessage.action == 21)
+    spinPowerOn();   
   else
     sendRFMessage(currentMessage.action, currentMessage.bodyLength);
 }
@@ -91,9 +96,13 @@ void handleMessageDataReceived(){
     speed = speed<<8;
     speed+=pcBuffer[1];
     setMotorSpeed(speed);
-  }else
+  }
+  else
     sendRFData(pcBuffer, pcBufferReadLength);
 }
+
+
+
 
 
 

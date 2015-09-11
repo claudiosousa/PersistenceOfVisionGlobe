@@ -26,6 +26,19 @@ var stopMotor = function () {
     sendMsg(11);
 }
 
+var powerOff = function () {
+    sendMsg(7);
+}
+
+var spinningPowerOff = function () {
+    sendMsg(20);
+}
+
+var spinningPowerOn = function () {
+    sendMsg(21);
+}
+
+
 var sendColor = function (color) {
     var data = [];
     for (var i = 0; i < 2880; i++) {
