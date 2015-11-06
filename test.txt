@@ -1,8 +1,0 @@
-
-
-RF24/examples/led_remote/
-
-ROLE: LED Board
-
-STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
-RX_ADDR_P0-1	
