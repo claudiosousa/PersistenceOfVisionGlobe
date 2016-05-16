@@ -1,3 +1,3 @@
 POV
 
-Files on the Globe Persistance of Vision Project [https://goo.gl/w6Ecz0]
+Files on the [Persistance of Vision Globe](https://goo.gl/w6Ecz0) Project
